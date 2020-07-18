@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Ubuntu Light';
+  src: url("fonts/Ubuntu-Light.eot");
+  src: url("fonts/Ubuntu-Light.eot?#iefix") format("embedded-open"), url("fonts/Ubuntu-Light.woff") format("woff"), url("fonts/Ubuntu-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu Regular';
+  src: url("fonts/Ubuntu-Regular.eot");
+  src: url("fonts/Ubuntu-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Ubuntu-Regular.woff") format("woff"), url("fonts/Ubuntu-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu Med1um';
+  src: url("../css/fonts/Ubuntu-Medium.eot");
+  src: url("../css/fonts/Ubuntu-Medium.eot?#iefix") format("embedded-opentype"), url("../css/fonts/Ubuntu-Medium.woff") format("woff"), url("../css/fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("fonts/Roboto.woff2") format("woff2"), url("fonts/Roboto.woff") format("woff"), url("fonts/Roboto.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+section {
+  margin: 10px 0 10px 0;
+}
+
+button {
+  -webkit-appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark-color(buttontext, #aaaaaa);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  cursor: default;
+  background-color: -internal-light-dark-color(#efefef, #4a4a4a);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark-color(#767676, #c3c3c3);
+  -o-border-image: initial;
+     border-image: initial;
+}
+
+.btn-nav {
+  font-size: 15px;
+  background-color: #e0812d;
+  color: #eaeaea;
+  border-radius: 5px;
+  border: 0;
+  text-align: center;
+  width: 165px;
+  height: 27px;
+  margin-left: -30px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/*# sourceMappingURL=style.css.map */
