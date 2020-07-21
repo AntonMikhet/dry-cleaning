@@ -24,15 +24,15 @@
 <header class="desctop-header">
     <div class="header-logo"> <img src="img/doublecleanlogotext.svg"  alt=""></div>
     <div class="header-main">
-        <div class="header-main__text"><a href="" class="podmenu">Услуги</a> </div>
-        <div class="header-main__text"><a href="" class="podmenu">Организациям</a> </div>
-        <div class="header-main__text"><a href="" class="podmenu">О нас</a> </div>
+        <div class="header-main__text"><a class="podmenu" onclick="showbar(2)">Услуги</a> </div>
+        <div class="header-main__text"><a class="podmenu" onclick="showbar(1)">Организациям</a> </div>
+        <div class="header-main__text"><a class="podmenu" onclick="showbar(3)">О нас</a> </div>
         <div class="header-main__text"><a href="">Цены</a> </div>
         <div class="header-main__text"><a href="">Фото</a> </div>
         <div class="header-main__text"><a href="">Отзывы</a> </div>
         <div class="header-main__text"><a href="">Контакты</a> </div>
     </div> 
-    <div class="header-number"><div>+ 375 (29) 258-69-13</div></div>
+    <div class="header-number"><a href="tel:+375292586913">+ 375 (29) 258-69-13</a> </div>
 </header>
     <section class="main">
         <div class="magnet">
@@ -41,7 +41,7 @@
                 <p>Удаляем пятна и выводим запахи </p> 
                 <p>Работаем только со средствами <br> безопасными для здоровья!</p>
             </div>
-            <button class="magnet__button">Вызвать мастера</button>
+            <button class="magnet__button" onclick="modalActive(1)">Вызвать мастера</button>
         </div>
     </section>
     <section class="description">
@@ -171,7 +171,7 @@
         <div class="head-calc">
             <h1 class="heading" align="center">Как рассчитать стоимость?</h1>
             <p class="text__p" align="center">Вы можете легко расчитать стоимость заказав звонок у нас!</p>
-            <button class="magnet__button" style="margin-left: 30%;">Заказать звонок</button>
+            <button class="magnet__button" style="margin-left: 30%;"  onclick="modalActive(1)">Заказать звонок</button>
         </div>
         </section>
 
@@ -353,9 +353,54 @@
         <a href="">УНП</a>
     </div>
 </footer>
+    <form class="modal" method="POST" action="telegram.php" id="modal-block" >
+        <div class="modal-burger" onclick="modalActive(2)">
+        <div class="modal-burger-one"></div> <div class="modal-burger-two"></div>
+        </div>
+        <div class="modal-case"> 
+            <h1 class="heading" align="center">Вызвать мастера</h1>
+            <p class="text__p" align="center">Отправьте ваш телефон и мы перезвоним вам для уточнения деталей заказа!</p>
+            <input type="text" name="user_name"  class="modal-input" value="" placeholder="Ваше имя" tabindex="1">
+            <input type="tel" name="user_phone" class="modal-input" value="" placeholder="Ваш телефон" tabindex="2">
+            <textarea name="comment" class="modal-textarea" placeholder="Комментарий к заказу" rows="4" tabindex="3"></textarea>
+            <button type="submit" class="modal-button">Вызвать мастера</button>
+            <p class="text__p soglasie" align="center">Нажимая на кнопку «Отправить», я даю 
+          <a href="/soglasie" align="center">согласие на обработку моих персональных данных</a>.</p>
+        </div>
+    </form>
+
+
+        <div class="organization" id="organ">
+            <span class="arrow"></span> <span class="white-arrow"></span>
+            <div><a href="">Услуги для организаций</a></div>
+            <div><a href="">Химчистка мебели в офисах</a> </div>
+            <div><a href="">Химчистка мебели в ресторанах</a> </div>
+            <div><a href="">Химчистка мебели в кинотеатрах и театров</a> </div>
+            <div><a href="">Химчистка мебели в школах и вузах</a> </div>
+        </div>
+
+        <div class="services" id="service">
+            <span class="arrow"></span> <span class="white-arrow"></span>
+            <div><a href="">Химчистка диванов</a></div>
+            <div><a href="">Химчистка кожанной мебели</a> </div>
+            <div><a href="">Химчистка мягкой мебели</a> </div>
+            <div><a href="">Химчистка матрасов</a> </div>
+            <div><a href="">Химчистка стульев</a> </div>
+            <div><a href="">Химчистка кресел</a> </div>
+        </div>
+        
+        <div class="aboutUs" id="about">
+            <span class="arrow"></span> <span class="white-arrow"></span>
+            <div><a href="">Оборудование</a></div>
+            <div><a href="">Чистищие средства</a> </div>
+            <div><a href="">Сертификаты</a> </div>
+        </div>
+
+
 
     <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/owlcarousel2/owl.carousel.min.js"></script>
+
     <!-- <script src="libs/jquery/jquery.lazy-master/jquery.lazy.min.js"></script>  -->
     <!-- <script src="libs/jquery/jquery.lazy-master/jquery.lazy.plugins.min.js"></script> -->
     <script src="js/custom.js"></script>

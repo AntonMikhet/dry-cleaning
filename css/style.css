@@ -66,7 +66,7 @@ button {
   background: white;
   height: 80px;
   width: 100%;
-  z-index: 999;
+  z-index: 200;
 }
 
 .header-main {
@@ -124,7 +124,16 @@ button {
   text-align: right;
   height: 30px;
   padding-top: 34px;
+}
+
+.header-number > a {
+  color: #2f3e53;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.header-main > div {
+  cursor: pointer;
 }
 
 .podmenu:after {
@@ -185,7 +194,7 @@ button {
 
 .description div {
   width: 630px;
-  margin: 80px auto;
+  margin: 130px auto;
 }
 
 .qualities {
@@ -379,9 +388,9 @@ button {
 }
 
 .questions-block {
-  width: 620px;
+  width: 40%;
   border: 1px solid #02b4be;
-  margin-left: 20%;
+  margin-left: 30%;
   margin-bottom: 50px;
   padding: 40px;
   border-radius: 9px;
@@ -447,5 +456,189 @@ footer {
   color: #ff7547;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+
+.modal {
+  background-color: #000000a6;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.modal-case {
+  width: 35%;
+  background-color: white;
+  margin-left: 32.5%;
+  margin-top: 4%;
+  z-index: 251;
+  padding: 20px;
+  cursor: default;
+}
+
+.modal-input {
+  color: #000000;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  width: 80%;
+  margin: 5px 0 5px 10%;
+  height: 50px;
+  font-size: 16px;
+}
+
+.modal-textarea {
+  color: #000000;
+  border: 1px solid #c9c9c9;
+  border-radius: 6px;
+  height: 136px;
+  width: 80%;
+  margin: 5px 0 5px 10%;
+  font-size: 16px;
+  font-family: Arial;
+  padding: 5px 0 0 5px;
+}
+
+.modal-button {
+  color: #ffffff;
+  background-color: #ff7547;
+  border-radius: 6px;
+  border: 0;
+  width: 80%;
+  height: 54px;
+  font-size: 16px;
+  margin-left: 10%;
+  font-weight: 600;
+}
+
+.modal-case p > a {
+  color: #ff7547;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.soglasie {
+  font-size: 14px;
+  margin: 15px 0 0 0;
+}
+
+.modal-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.modal-burger-two {
+  margin-left: 2px;
+  border-bottom: 4px solid #888888;
+  border-left: 4px solid #888888;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal-burger-one {
+  border-top: 4px solid #888888;
+  border-right: 4px solid #888888;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.organization, .services, .aboutUs {
+  pointer-events: auto;
+  -webkit-transition-duration: 350ms;
+          transition-duration: 350ms;
+  -webkit-animation-duration: 350ms;
+          animation-duration: 350ms;
+  position: fixed;
+  top: 61px;
+  left: 400px;
+  margin-top: 15px;
+  display: none;
+  z-index: 221;
+  background-color: #fff;
+  text-align: left;
+  max-width: 350px;
+  border-radius: 8px;
+  border: 1px solid #02b4be;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+  padding: 15px;
+}
+
+.organization, .services, .aboutUs > div {
+  margin: 5px 0 5px 0;
+}
+
+.services > div {
+  margin: 5px 0 5px 0;
+}
+
+.aboutUs > div {
+  margin: 5px 0 5px 0;
+}
+
+.organization div > a {
+  color: #2f3e53;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, Roboto, sans-serif;
+}
+
+.services div > a {
+  color: #2f3e53;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, Roboto, sans-serif;
+}
+
+.aboutUs div > a {
+  color: #2f3e53;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, Roboto, sans-serif;
+}
+
+.arrow {
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-bottom: 9px solid;
+  position: absolute;
+  top: -8px;
+  left: 5px;
+  margin-top: -1px;
+  border-color: #02b4be;
+}
+
+.white-arrow {
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-bottom: 8px solid;
+  position: absolute;
+  top: -7.5px;
+  left: 6px;
+  border-color: white;
+}
+
+.active {
+  display: block !important;
+}
+
+.services {
+  left: 280px;
+}
+
+.aboutUs {
+  left: 580px;
 }
 /*# sourceMappingURL=style.css.map */

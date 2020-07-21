@@ -88,4 +88,52 @@ function price(leathertexile) {
         default:
             break;
     }
+};
+function modalActive(modalShow) {
+    modal = document.getElementById("modal-block");
+    switch (modalShow) {
+        case 1:
+            modal.style.display="block"
+            break;
+        case 2:
+            modal.style.display="none"
+            break;
+        default:
+            break;
+    };
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modalActive(2);
+        };
+    };
+};
+function showbar(onOff) {
+    organization = document.getElementById('organ');
+    services = document.getElementById('service');
+    aboutUs = document.getElementById('about');
+    switch (onOff) {
+        case 1:
+            if (organization.classList.contains('active')==1) {
+                organization.classList.remove('active');
+            } else {
+                organization.classList.add('active');
+            };
+            break;
+        case 2:
+            if (services.classList.contains('active')==1) {
+                services.classList.remove('active');
+            } else {
+                services.classList.add('active');
+            };
+            break;
+            case 3:
+                if (aboutUs.classList.contains('active')==1) {
+                    aboutUs.classList.remove('active');
+                } else {
+                    aboutUs.classList.add('active');
+                };
+                break;
+        default:
+            break;
+    };
 }
