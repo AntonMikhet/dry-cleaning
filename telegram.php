@@ -1,28 +1,14 @@
 <?php
-
-/* https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXXXX/getUpdates,
-где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
-
-$name = $_POST['user_name'];
-$phone = $_POST['user_phone'];
-$email = $_POST['user_email'];
-$token = "1257292254:AAGihlYjuTUZWnkhtaPKTuUhjFBS8MQdUQI";
-$chat_id = "448299018";
-$arr = array(
-  'Имя пользователя: ' => $name,
-  'Телефон: ' => $phone,
-  'Email' => $email
-);
-
-foreach($arr as $key => $value) {
-  $txt .= "<b>".$key."</b> ".$value."%0A";
-};
-
-$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
-
-if ($sendToTelegram) {
-  header('Location: thank-you.html');
+$name = $_POST['name'];
+$phone = $_POST['phone'];
+$name = htmlspecialchars($name);
+$phone = htmlspecialchars($phone);
+$name = urldecode($name);
+$phone = urldecode($phone);
+$name = trim($name);
+$phone = trim($phone);
+if (mail("dry.clean.minsk@gmail.com", "Zayavka Dry Cleaning", "Имя:".$name.". Телефон: ".$phone ,"From:anton2585665@gmail.com  \r\n"))
+ { header("Location: /index.html"); 
 } else {
-  echo "Error";
-}
-?>
+    echo "при отправке сообщения возникли ошибки";
+}?>

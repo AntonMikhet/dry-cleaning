@@ -31,7 +31,7 @@ function price(leathertexile) {
 
             document.getElementById("podushka").src="img/textile sofa/divan-7.png"
             document.getElementById("divan__text6").innerHTML="Подушка"
-            document.getElementById("divan__price6").innerHTML="От 3р"
+            document.getElementById("divan__price6").innerHTML="От 4р"
 
             document.getElementById("stul").src="img/textile sofa/divan-8.png"
             document.getElementById("divan__text7").innerHTML="Стул"
@@ -53,19 +53,19 @@ function price(leathertexile) {
 
             document.getElementById("divan1").src="img/leather sofa/divan-9.png"
             document.getElementById("divan__text1").innerHTML="Кожанный диван"
-            document.getElementById("divan__price1").innerHTML="От 40р"
+            document.getElementById("divan__price1").innerHTML="От 43р"
 
             document.getElementById("divan2").src="img/leather sofa/divan-10.png"
             document.getElementById("divan__text2").innerHTML="Трёхместный кожанный диван"
-            document.getElementById("divan__price2").innerHTML="От 45р"
+            document.getElementById("divan__price2").innerHTML="От 48р"
 
             document.getElementById("divan3").src="img/leather sofa/divan-11.png"
             document.getElementById("divan__text3").innerHTML="Угловой кожанный диван"
-            document.getElementById("divan__price3").innerHTML="От 50р"
+            document.getElementById("divan__price3").innerHTML="От 53р"
 
             document.getElementById("divan4").src="img/leather sofa/divan-12.png"
             document.getElementById("divan__text4").innerHTML="Большой угловой кожанный диван"
-            document.getElementById("divan__price4").innerHTML="От 55р"
+            document.getElementById("divan__price4").innerHTML="От 58р"
 
             document.getElementById("divan5").src="img/leather sofa/divan-13.png"
             document.getElementById("divan__text5").innerHTML="Спальное место кожанного дивана"
@@ -73,7 +73,7 @@ function price(leathertexile) {
 
             document.getElementById("podushka").src="img/leather sofa/divan-14.png"
             document.getElementById("divan__text6").innerHTML="Подушка из кожи"
-            document.getElementById("divan__price6").innerHTML="От 7р"
+            document.getElementById("divan__price6").innerHTML="От 8р"
 
             document.getElementById("stul").src="img/leather sofa/divan-15.png"
             document.getElementById("divan__text7").innerHTML="Стул из кожи"
@@ -81,7 +81,7 @@ function price(leathertexile) {
 
             document.getElementById("kreslo").src="img/leather sofa/divan-16.png"
             document.getElementById("divan__text8").innerHTML="Кожанное кресло"
-            document.getElementById("divan__price8").innerHTML="От 28р"
+            document.getElementById("divan__price8").innerHTML="От 30р"
 
             
             break;
@@ -115,8 +115,11 @@ function showbar(onOff) {
         case 1:
             if (organization.classList.contains('active')==1) {
                 organization.classList.remove('active');
+                
             } else {
                 organization.classList.add('active');
+                services.classList.remove('active');
+                aboutUs.classList.remove('active');
             };
             break;
         case 2:
@@ -124,6 +127,8 @@ function showbar(onOff) {
                 services.classList.remove('active');
             } else {
                 services.classList.add('active');
+                organization.classList.remove('active');
+                aboutUs.classList.remove('active');
             };
             break;
             case 3:
@@ -131,9 +136,71 @@ function showbar(onOff) {
                     aboutUs.classList.remove('active');
                 } else {
                     aboutUs.classList.add('active');
+                    organization.classList.remove('active');
+                    services.classList.remove('active');
                 };
                 break;
         default:
             break;
     };
-}
+    window.onclick = function (event) {
+        if (event.target == organization) {
+            showbar(1);
+        };
+    };
+};
+ // SLIDE BAR
+ function slidebar() {
+    let slidebar = document.getElementById('slide-bar');
+    let list = document.getElementById('list');
+    let mobile = document.getElementById('mobile');
+    let cross = document.getElementById('cross');
+    let arrow = document.getElementById('arrow');
+        if (slidebar.classList.contains('click') == 0) {
+            slidebar.classList.add('click');
+            cross.classList.add('showburger');
+            arrow.classList.add('showburger__arrow');
+            slidebar.style.zIndex = 10;
+            slidebar.style.width = '100%';
+            mobile.style.zIndex = 10; 
+            setTimeout(function(){list.style.display= 'block';},500); 
+        }else if (slidebar.classList.contains('click')) {
+            slidebar.classList.remove('click');
+            cross.classList.remove('showburger');
+            arrow.classList.remove('showburger__arrow');
+            slidebar.style.zIndex = -5;
+            slidebar.style.width = 0;
+            list.style.display= 'none';  
+            mobile.style.zIndex = 5;  
+        }; 
+};
+       // DROPDOWN
+
+       function dropdown(dropdownArg) {
+        let catalog = document.getElementById('catalog');
+        let remont = document.getElementById('remont');
+        let dropdownArgPolar;
+        switch (dropdownArg){
+            case 1 :
+                dropdownArg = remont;
+                dropdownArgPolar = catalog;
+                break;
+            case 2 :
+                dropdownArg = catalog;
+                dropdownArgPolar = remont;
+    
+                break;
+        };
+        if (dropdownArg.classList.contains('click-list') == 0) {
+            dropdownArg.classList.add('click-list');
+            dropdownArg.style.display = 'flex';   
+            if (dropdownArgPolar.classList.contains('click-list')) {
+                dropdownArgPolar.classList.remove('click-list');
+                dropdownArgPolar.style.display = 'none';
+            };
+        } else if (dropdownArg.classList.contains('click-list')) {
+            dropdownArg.classList.remove('click-list');
+            dropdownArg.style.display = 'none';
+        }; 
+    };
+                                            // DROPDOWN CLOSE

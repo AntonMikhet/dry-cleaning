@@ -21,6 +21,77 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
+    <header class="header__mobile" id="mobile">
+        <section class="mobile-header">
+            <div class="logo"><h1 class="heading" align="center">Dry Cleaning</h1> </div>
+            <div class="model-4" onclick="slidebar()">
+                  <div class="menu">
+                      <div class="bar" id="arrow"></div>
+                      <div class="bar" id="cross"></div>
+                    </div></div>
+                    <div class="slidebar" id="slide-bar">
+                        <div id="list">
+                                <ul> 
+                                    <li>
+                                        <a class="slidebar_li" href="#">Отзывы </a>
+                                    </li>
+                                
+                                <li>
+                                    <a class="slidebar_li" onclick="dropdown(1)" >Химчистка  <img class="chevrone" src="img/Icons/chevrone.svg" width="7%" alt="">
+                                    </a>
+                                    <div class="dropdown-menu-remont click-list" id="remont">
+                                      <a class="slidebar-item" href="#">Диванов</a>
+                                      <a class="slidebar-item" href="#">Ковров</a>
+                                      <a class="slidebar-item" href="#">Матрасов</a>
+                                      <a class="slidebar-item" href="#">Прочая мягкая мебель</a>
+                                    </div>
+                                  </li>
+                                <li>
+                                    <a class="slidebar_li" onclick="dropdown(2)">Аренда <img class="chevrone" src="img/Icons/chevrone.svg" width="7%" alt="">
+                                    </a>
+                                    <div class="dropdown-menu-catalog" id="catalog">
+                                      <a class="slidebar-item" href="#">Моющий пылесос</a>
+                                      <a class="slidebar-item" href="#">Строительный пылесос</a>
+                                      <!-- <a class="slidebar-item" href="#"></a> -->
+                                      <a class="slidebar-item" href="#">Прочая техника</a>
+                                    </div>
+                                  </li>
+                                <li>
+                                    <a class="slidebar_li" href="#">Контакты</a>
+                                  </li>
+                              </ul>
+                              <div class="slidebar-bottom">
+                                <div class="slidebar-messanger"> 
+                                    <a href="viber://add?number=375292586913"><img width="47" src="img/Icons/viber.png" alt=""></a>
+                                    <a href="tg://resolve?domain=ozoar"><img width="47" src="img/Icons/telegram.png" alt=""></a>
+                                    <a href="https://www.instagram.com/1coffeeservice/"><img width="47" src="img/Icons/instagram.svg" alt=""></a>
+                                    <a href="https://www.instagram.com/1coffeeservice/"><img width="47" src="img/Icons/letter.svg" alt=""></a>
+                
+                                </div>
+                                <p class="nav-text__info">
+                                    <img src="img/Icons/24call.png" width="9%" alt="">
+                                    <a href="tel:+375(29)258-69-13">+375(29)258-69-13</a>
+                                </p>                                
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="mobile-subheader">
+            <div class="mobile-subheader__tel" align="center">
+                <!-- <img class="lazy" data-src="img/Icons/smartphone.svg" width="9%" alt=""> -->
+                <a href="tel:+375(29)258-69-13">+375 (29) 258-69-13</a>
+            </div>
+            <div class="mobile-messanger"> 
+                <a class="icons" href="whatsapp://send?phone=+375333547105"><img class="icons" src="img/Icons/viber.png" alt=""></a>
+                <a class="icons" href="tg://resolve?domain=ozoar"><img class="icons" src="img/Icons/telegram.png" alt=""></a>
+                <a class="icons" href="https://www.instagram.com/1coffeeservice"><img class="icons" src="img/Icons/instagram.svg" alt=""></a>
+                </div>
+                
+          </section>
+    </header>
+
+    <header class="header__desctop">
+    </header>
 <header class="desctop-header">
     <div class="header-logo"> <img src="img/doublecleanlogotext.svg"  alt=""></div>
     <div class="header-main">
@@ -41,7 +112,7 @@
                 <p>Удаляем пятна и выводим запахи </p> 
                 <p>Работаем только со средствами <br> безопасными для здоровья!</p>
             </div>
-            <button class="magnet__button" onclick="modalActive(1)">Вызвать мастера</button>
+            <button class="magnet__button" onclick="modalActive(1)">Рассчитать стоимость</button>
         </div>
     </section>
     <section class="description">
@@ -152,7 +223,7 @@
                 <div class="price-card">
                     <img src="img/textile sofa/divan-7.png" id="podushka" alt="" width="220px">
                     <h2 class="heading" align="center" id="divan__text6">Съемная подушка</h2>
-                    <h1 class="heading" align="center" id="divan__price6">От 3р</h1>
+                    <h1 class="heading" align="center" id="divan__price6">От 4р</h1>
                 </div>
                 <div class="price-card">
                     <img src="img/textile sofa/divan-8.png" id="stul" alt="" width="220px">
@@ -171,7 +242,7 @@
         <div class="head-calc">
             <h1 class="heading" align="center">Как рассчитать стоимость?</h1>
             <p class="text__p" align="center">Вы можете легко расчитать стоимость заказав звонок у нас!</p>
-            <button class="magnet__button" style="margin-left: 30%;"  onclick="modalActive(1)">Заказать звонок</button>
+            <button class="magnet__button" onclick="modalActive(1)">Заказать звонок</button>
         </div>
         </section>
 
@@ -353,21 +424,21 @@
         <a href="">УНП</a>
     </div>
 </footer>
-    <form class="modal" method="POST" action="telegram.php" id="modal-block" >
+    <div class="modal" method="POST" action="telegram.php" id="modal-block" >
         <div class="modal-burger" onclick="modalActive(2)">
         <div class="modal-burger-one"></div> <div class="modal-burger-two"></div>
         </div>
-        <div class="modal-case"> 
-            <h1 class="heading" align="center">Вызвать мастера</h1>
+        <form class="modal-case"  method="POST" action="telegram.php"> 
+            <h1 class="heading" align="center">Рассчитать стоимость</h1>
             <p class="text__p" align="center">Отправьте ваш телефон и мы перезвоним вам для уточнения деталей заказа!</p>
-            <input type="text" name="user_name"  class="modal-input" value="" placeholder="Ваше имя" tabindex="1">
-            <input type="tel" name="user_phone" class="modal-input" value="" placeholder="Ваш телефон" tabindex="2">
-            <textarea name="comment" class="modal-textarea" placeholder="Комментарий к заказу" rows="4" tabindex="3"></textarea>
-            <button type="submit" class="modal-button">Вызвать мастера</button>
+            <input type="text" name="name"  class="modal-input form-control" value="" placeholder="Ваше имя" tabindex="1" required>
+            <input type="tel" name="phone" class="modal-input form-control" value="" placeholder="Ваш телефон" tabindex="2" required>
+            <textarea type="text" name="comment" class="modal-textarea form-control" placeholder="Комментарий к заказу" rows="4" tabindex="3"></textarea>
+            <button name="formservices" type="submit" class="modal-button">Отправить</button>
             <p class="text__p soglasie" align="center">Нажимая на кнопку «Отправить», я даю 
           <a href="/soglasie" align="center">согласие на обработку моих персональных данных</a>.</p>
-        </div>
-    </form>
+            </form>
+    </div>
 
 
         <div class="organization" id="organ">
