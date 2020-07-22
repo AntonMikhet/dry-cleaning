@@ -147,6 +147,13 @@
             transform-origin: 73% 102% 0;
     top: 2.5px !important;
   }
+  .nav-text__info {
+    margin-left: 30px;
+    font-size: 25px;
+  }
+  .slidebar-messanger a > img {
+    width: 47px;
+  }
   .slidebar {
     display: block;
     position: fixed;
@@ -184,7 +191,7 @@
     font-size: 25px;
   }
   .dropdown-menu-remont, .dropdown-menu-catalog {
-    width: 218px;
+    width: 280px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -211,7 +218,8 @@
     text-align: right;
     padding-right: 0;
     font-family: "Segoe UI";
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 400;
     text-decoration: none;
   }
@@ -631,7 +639,7 @@
     font-size: 35px;
   }
   .dropdown-menu-remont, .dropdown-menu-catalog {
-    width: 90%;
+    width: 510px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -950,6 +958,9 @@
   }
   .column > h3 {
     font-size: 30px;
+  }
+  .slidebar-messanger a > img {
+    width: 80px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
