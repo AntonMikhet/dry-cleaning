@@ -963,5 +963,9 @@
   .slidebar-messanger a > img {
     width: 80px;
   }
+  .price-card > img {
+    width: 70%;
+    margin-left: 15%;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */
