@@ -54,7 +54,7 @@
     background-color: #f2f2f2;
     color: black;
     padding: 10px 10px 0 10px;
-    height: 90px;
+    height: 100px;
   }
   .mobile-messanger {
     display: -webkit-box;
@@ -180,6 +180,37 @@
   }
   #list > ul {
     padding-left: 5%;
+  }
+  .contact-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .drycleaning-contact {
+    height: 1300px;
+  }
+  .requisites {
+    line-height: 19px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .requisites > p {
+    font-size: 17px;
+  }
+  .contact-line-one, .contact-form {
+    width: 100%;
+  }
+  .contact-line-one > p {
+    text-align: center;
+  }
+  .contact-mail {
+    margin-left: 80px;
   }
   .nav-link {
     color: white !important;
@@ -965,6 +996,37 @@
   .price-card > img {
     width: 70%;
     margin-left: 15%;
+  }
+  .contact-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .drycleaning-contact {
+    height: 1300px;
+  }
+  .requisites {
+    line-height: 19px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .requisites > p {
+    font-size: 17px;
+  }
+  .contact-line-one, .contact-form {
+    width: 100%;
+  }
+  .contact-line-one > p {
+    text-align: center;
+  }
+  .contact-mail {
+    margin-left: 80px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

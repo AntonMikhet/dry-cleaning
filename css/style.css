@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: Arial, Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   margin: 0;
 }
 
@@ -61,7 +61,7 @@ button {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-family: Arial, Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 14px;
   background: white;
   height: 80px;
@@ -102,7 +102,7 @@ button {
 }
 
 .header-main__text > a {
-  font-family: Arial, Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #2f3e53;
   font-size: 14px;
   font-weight: 700;
@@ -254,7 +254,6 @@ button {
 
 .how > div {
   margin: 30px auto;
-  width: 650px;
 }
 
 .heading {
@@ -593,21 +592,21 @@ footer {
   color: #2f3e53;
   text-decoration: none;
   font-size: 14px;
-  font-family: Arial, Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .services div > a {
   color: #2f3e53;
   text-decoration: none;
   font-size: 14px;
-  font-family: Arial, Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .aboutUs div > a {
   color: #2f3e53;
   text-decoration: none;
   font-size: 14px;
-  font-family: Arial, Roboto, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .arrow {
@@ -649,5 +648,96 @@ footer {
 
 .head-calc > button {
   margin-left: 33%;
+}
+
+.drycleaning-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  top: 150px;
+  left: 0;
+  height: 900px;
+  width: 100%;
+}
+
+.bread-crumbs {
+  margin-left: 150px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.bread-crumbs > a {
+  color: #ff7547;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+}
+
+.bread-crumbs > p {
+  margin: 0 0 0 10px;
+  color: #2f3e53;
+}
+
+.contact-line-one > h1 {
+  font-size: 48px;
+}
+
+.contact-line-one .number-contact {
+  font-size: 40px;
+  color: #2f3e53;
+  text-decoration: none;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.contact-line-one {
+  width: 35%;
+}
+
+.contact-form {
+  width: 35%;
+}
+
+.contact-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin-left: 150px;
+}
+
+.contact-modal {
+  display: block;
+}
+
+.contact-mail {
+  font-size: 22px;
+  text-decoration: none;
+  font-family: Roboto, Arial, sans-serif;
+  color: #ff7547;
+}
+
+.contact__a {
+  text-decoration: none;
+  font-family: Roboto, Arial, sans-serif;
+  color: #ff7547;
+}
+
+.requisites {
+  margin-left: 150px;
+  line-height: 8px;
 }
 /*# sourceMappingURL=style.css.map */
