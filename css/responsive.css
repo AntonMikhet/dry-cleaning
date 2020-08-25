@@ -147,6 +147,18 @@
             transform-origin: 73% 102% 0;
     top: 2.5px !important;
   }
+  .leather-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .leather-card {
+    margin: 0 auto;
+  }
+  .price-card > img {
+    margin-left: 0;
+  }
   .nav-text__info {
     margin-left: 30px;
     font-size: 25px;
@@ -192,9 +204,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .drycleaning-contact {
-    height: 1300px;
-  }
   .requisites {
     line-height: 19px;
     width: 90%;
@@ -207,13 +216,33 @@
     width: 100%;
   }
   .contact-line-one > p {
-    text-align: center;
-  }
-  .contact-mail {
-    margin-left: 80px;
+    text-align: left;
   }
   .nav-link {
     color: white !important;
+  }
+  .how > .examples-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .examples-box > div {
+    width: 100%;
+    height: 200px;
+  }
+  .examples-box div > iframe {
+    width: 100%;
+    height: 220px;
+  }
+  .examples-box > iframe {
+    width: 100%;
+    height: 220px;
   }
   .logo a > img {
     width: 125px;
@@ -307,7 +336,7 @@
   }
   .main {
     width: 100%;
-    height: 490px;
+    height: 700px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -315,7 +344,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-position-x: 87%;
+    background-position-x: 93% !important;
     background-position-y: 0;
     top: 0;
     background-size: cover;
@@ -488,6 +517,60 @@
     text-decoration: none;
     font-family: Arial, Roboto, sans-serif;
   }
+  .for-organization {
+    margin-top: -70px;
+  }
+  .for-organization-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .why-org {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .appraisal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .appraisal-button {
+    width: 77%;
+    margin: 0 auto;
+  }
+  .appraisal-text {
+    width: 90%;
+  }
+  .bread-crumbs {
+    margin-left: 60px;
+  }
+  .for-organization-block div a > img {
+    margin-left: 65px;
+  }
+  .for-organization > h1 {
+    margin-left: 120px;
+  }
+  .for-organization > h2 {
+    margin-left: 65px;
+  }
+  .contact-line-one .number-contact {
+    font-size: 25px;
+  }
+  .reviews div > img {
+    width: 100%;
+  }
+  .reviews {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 668px) and (max-width: 1023px) {
@@ -533,7 +616,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    top: 35%;
+    top: 55%;
     left: 0;
     z-index: 1;
     background-color: #f2f2f2;
@@ -763,7 +846,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-position-x: 87%;
+    background-position-x: 87% !important;
     background-position-y: 0;
     top: 50px;
     background-size: cover;
@@ -955,6 +1038,9 @@
     font-size: 30px;
     line-height: 35px;
   }
+  .contact-line-one .number-contact {
+    font-size: 25px;
+  }
   .heading {
     font-size: 40px;
   }
@@ -1008,9 +1094,6 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .drycleaning-contact {
-    height: 1300px;
-  }
   .requisites {
     line-height: 19px;
     width: 90%;
@@ -1023,10 +1106,79 @@
     width: 100%;
   }
   .contact-line-one > p {
-    text-align: center;
+    text-align: left;
   }
-  .contact-mail {
-    margin-left: 80px;
+  .logo a > img {
+    width: 125px;
+    margin-left: 25px;
+    margin-top: 10px;
+  }
+  .how > .examples-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .examples-box > div {
+    width: 100%;
+    height: 400px;
+  }
+  .examples-box div > iframe {
+    width: 100%;
+    height: 100%;
+  }
+  .for-organization-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .why-org {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .appraisal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .appraisal-button {
+    width: 77%;
+    margin: 0 auto;
+  }
+  .appraisal-text {
+    width: 90%;
+  }
+  .bread-crumbs {
+    margin-left: 60px;
+  }
+  .for-organization-block div a > img {
+    margin-left: 100px;
+  }
+  .for-organization > h1 {
+    margin-left: 120px;
+  }
+  .for-organization > h2 {
+    margin-left: 65px;
+  }
+  .reviews div > img {
+    width: 100%;
+  }
+  .reviews {
+    width: 100%;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=responsive.css.map */

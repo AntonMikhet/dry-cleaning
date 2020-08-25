@@ -13,12 +13,29 @@
     <meta property="og:url" content="http://drycleaning.by" />
     <meta property="og:site_name" content="Dry Cleaning Minsk" />
     <meta name="robots" content="index, follow">
-    <!-- <link rel="shortcut icon" href="img/Icons/Logo.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '335242407676383');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=335242407676383&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
     <header class="header__mobile" id="mobile">
@@ -33,7 +50,7 @@
                         <div id="list">
                                 <ul> 
                                     <li>
-                                        <a class="slidebar_li" href="otzivy.html">Отзывы </a>
+                                        <a class="slidebar_li" href="reviews.html">Отзывы </a>
                                     </li>
                                 
                                 <li>
@@ -44,7 +61,7 @@
                                       <a class="slidebar-item" href="drycleaning-leather.html">Химчистка кожанной мебели</a>
                                       <a class="slidebar-item" href="drycleaning-mattress.html">Химчистка матрасов</a>
                                       <a class="slidebar-item" href="drycleaning-chair.html">Химчистка стульев</a>
-                                      <a class="slidebar-item" href="drycleaning-chair.html">Химчистка кресел</a>
+                                      <a class="slidebar-item" href="drycleaning-armchair.html">Химчистка кресел</a>
                                       <a class="slidebar-item" href="drycleaning-furniture.html">Химчистка мягкой мебели</a>
                                      
 
@@ -62,18 +79,18 @@
                                       <a class="slidebar-item" href="drycleaning-shool.html">Химчистка мебели в школах и вузах</a>
                                     </div>
                                   </li>
-                                <li>
+                               <!-- <li>
                                     <a class="slidebar_li" href="aboutUs.html">О нас</a>
-                                  </li>
-                                  <li>
+                                  </li> -->
+                                  <!-- <li>
                                     <a class="slidebar_li" href="rent.html">Аренда</a>
-                                  </li>
+                                  </li> -->
                                   <li>
                                     <a class="slidebar_li" href="price.html">Цены</a>
                                   </li>
-                                  <li>
+                                  <!-- <li>
                                     <a class="slidebar_li" href="foto.html">Фото</a>
-                                  </li>
+                                  </li> -->
                                   <li>
                                     <a class="slidebar_li" href="contact.html">Контакты</a>
                                   </li>
@@ -114,22 +131,272 @@
     <div class="header-main">
         <div class="header-main__text"><a class="podmenu" onclick="showbar(2)">Услуги</a> </div>
         <div class="header-main__text"><a class="podmenu" onclick="showbar(1)">Организациям</a> </div>
-        <div class="header-main__text"><a class="podmenu" onclick="showbar(3)">О нас</a> </div>
+       <!-- <div class="header-main__text"><a class="podmenu" onclick="showbar(3)">О нас</a> </div> -->
         <div class="header-main__text"><a href="price.html">Цены</a> </div>
-        <div class="header-main__text"><a href="rent.html">Аренда</a> </div>
-        <div class="header-main__text"><a href="foto.html">Фото</a> </div>
+        <!-- <div class="header-main__text"><a href="rent.html">Аренда</a> </div> -->
+        <!-- <div class="header-main__text"><a href="foto.html">Фото</a> </div> -->
         <div class="header-main__text"><a href="reviews.html">Отзывы</a> </div>
         <div class="header-main__text"><a href="contact.html">Контакты</a> </div>
     </div> 
     <div class="header-number"><a href="tel:+375292586913">+ 375 (29) 258-69-13</a> </div>
 </header>
 
+<section class="for-organization">
+    <div class="bread-crumbs"> <a href="index.html">Главная </a>  / <p> Организациям </p> </div>
+    <h1 class="heading">Предложение организациям</h1>
+    <div class="for-organization-block">
+        <div><a href="drycleaning-office.html">
+            <img src="img/organization/org-1.png" alt=""> 
+            <h2 class="heading">Офисам <br> и бизнес-центрам</h2>
+        </div></a>
+        <div><a href="drycleaning-restoran.html">
+            <img src="img/organization/org-1.png" alt=""> 
+            <h2 class="heading">Кафе, барам <br>
+                и ресторанам</h2>
+            </div></a>
+        <div><a href="drycleaning-cinema.html">
+            <img src="img/organization/org-1.png" alt=""> 
+            <h2 class="heading">Театрам <br>
+                и кинотеатрам</h2>
+        </div></a>
+       <div><a href="drycleaning-shool.html">
+            <img src="img/organization/org-1.png" alt=""> 
+            <h2 class="heading">Учебным заведениям <br> и детским садам</h2>
+        </div></a> 
+    </div>
+    <div class="organization-text">
+        <p class="text__p"> Компания Dry Cleaning оказывает услуги химчистки диванов и другой мягкой мебели в офисных помещениях, учебных заведениях, кинотеатрах и театрах, на предприятиях общественного питания. Мы работаем с организациями Москвы и Московской области и предлагаем самые выгодные условия сотрудничества. <br> <br>
+            В вашем распоряжении – бригада профессиональных мастеров, которые оперативно и качественно выполнят работы по химчистке любого объема, удалив самые сложные загрязнения. Делая большой заказ, вы получаете индивидуальную скидку. Для удобства оплаты наших услуг юридическими лицами мы принимаем как наличную, так и безналичную оплату на расчетный счет с предоставлением всех закрывающих документов. <br> <br>
+            Для компаний, которые постоянно заботятся о здоровье своего персонала и комфорте посетителей, у нас есть особое предложение по химчистке на постоянной основе с заключением договора на регулярное обслуживание.</p>
+    </div>
+    <br>
+    <h2 class="heading">Сотрудничество с Dry Cleaning – выгодно и удобно!</h2>
+    <br>
+    <div class="why-org">
+        <div>
+            <img src="img/organization/why-org-1.png" alt=""> 
+            <h2 class="heading">Химчистка <br>
+                в любой день <br>
+                и время суток</h2>
+            <p class="text__p">Мы работаем без выходных и праздников! Для вашего удобства возможно проведение химчистки в ночное время.</p>
+        </div>
+        <div>
+            <img src="img/organization/why-org-2.png" alt=""> 
+            <h2 class="heading">Оперативное <br> выполнение работ <br> любого объема</h2>
+            <p class="text__p">Большой штат мастеров нашей компании позволяет выполнять заказы любого объема в самые короткие сроки.
+            </p>
+
+            </div>
+        <div>
+            <img src="img/organization/why-org-3.png" alt=""> 
+            <h2 class="heading">Безопасные <br> чистящие <br> средства</h2>
+            <p class="text__p">Наши чистящие средства безопасны для применения в местах общественного питания и учебных заведениях.
+            </p>
+
+        </div>
+    <div>
+            <img src="img/organization/why-org-4.png" alt=""> 
+            <h2 class="heading">Наличная и <br> безналичная <br> формы оплаты</h2>
+            <p class="text__p">Принимаем наличную и безналичную оплату с предоставлением необходимой закрывающей документации.
+            </p>
+
+        </div>
+     </div>
+</section>
+<section class="appraisal">
+    <div class="appraisal-text"><p class="text__p">При необходимости предварительной оценки стоимости работ на месте, выезд менеджера и пробная химчистка – <span class="bold">бесплатно!</span>  Для заказа позвоните нам по телефону <a href="tel:+375(29)258-69-13">+375 (29) 258-69-13</a> или отправьте заявку с нашего сайта.</p> </div>
+    <div class="appraisal-button"><button class="magnet__button" onclick="modalActive(1)">Вызвать мастера на оценку</button>
+    </div>
+</section>
+<section class="price">
+    <h1 class="heading" align="center">Цены на химчистку стульев и мягкой мебели
+    </h1>
+    <div class="price__text">
+        <p class="text__p"align="center" >Наши цены зависят от степени загрязнения. <br>
+        Выезд мастера по В пределах МКАД г. Минска – бесплатный.
+        </p>
+    </div>
+    <div class="price-block-one">
+        <div class="price-card">
+            <img src="img/textile sofa/divan-8.png" id="stul" alt="Стул" width="220px">
+            <h2 class="heading" align="center" id="divan__text7">Стул</h2>
+            <h2 class="heading" align="center" id="divan__price7">От 5р</h2>
+        </div>
+        <div class="price-card">
+            <img src="img/leather sofa/divan-15.png" id="stul" alt="Кожанный стул" width="220px">
+            <h2 class="heading" align="center" id="divan__text7">Кожанный стул</h2>
+            <h2 class="heading" align="center" id="divan__price7">От 7р</h2>
+        </div>
+        <div class="price-card">
+            <img src="img/textile sofa/stul-price-2.png" id="stul" alt="Офисный стул" width="220px">
+            <h2 class="heading" align="center" id="divan__text7">Офисный стул</h2>
+            <h2 class="heading" align="center" id="divan__price7">От 7р</h2>
+        </div>
+        <div class="price-card">
+            <img src="img/leather sofa/kozh-meb-price-12.png" id="stul" alt="Офисный кожанный стул" width="220px">
+            <h2 class="heading" align="center" id="divan__text7">Офисный кожанный стул</h2>
+            <h2 class="heading" align="center" id="divan__price7">От 13р</h2>
+        </div>
+    </div>
+    <div class="price-block-two">
+        <div class="price-card">
+            <img src="img/textile sofa/divan-6.png" id="kreslo" alt="Кресло" width="220px">
+            <h2 class="heading" align="center" id="divan__text8">Кресло</h2>
+            <h2 class="heading" align="center" id="divan__price8">От 18р</h2>
+        </div>
+        <div class="price-card">
+            <img src="img/leather sofa/divan-16.png" id="kreslo" alt="Кожанное кресло" width="220px">
+            <h2 class="heading" align="center" id="divan__text8">Кожанное кресло</h2>
+            <h2 class="heading" align="center" id="divan__price8">От 30р</h2>
+        </div>
+        <div class="price-card">
+            <img src="img/textile sofa/stul-price-3.png" id="stul" alt="Офисное кресло" width="220px">
+            <h2 class="heading" align="center" id="divan__text7">Офисное кресло</h2>
+            <h2 class="heading" align="center" id="divan__price7">От 13р</h2>
+        </div>
+        <div class="price-card">
+            <img src="img/leather sofa/kozh-meb-price-11.png" id="divan3" alt="Офисное кожанное кресло" width="220px"  >
+            <h2 class="heading" align="center" id="divan__text3">Офисное кожанное кресло</h2>
+            <h1 class="heading" align="center" id="divan__price3">От 20р</h1>
+        </div>
+        
+    </div>
+    <div class="price-block-two">
+        <div class="price-card">
+            <img src="img/leather sofa/kozh-meb-price-10.png" id="divan4" alt="Кожанное кресло руководителя" width="220px"  >
+            <h2 class="heading" align="center" id="divan__text4">Кресло руководителя</h2>
+            <h1 class="heading" align="center" id="divan__price4">От 30р</h1>
+        </div>
+        <div class="price-card">
+            <img src="img/textile sofa/stul-price-9.png" id="divan4" alt="Кресло руководителя" width="220px"  >
+            <h2 class="heading" align="center" id="divan__text4">Кресло руководителя</h2>
+            <h1 class="heading" align="center" id="divan__price4">От 20р</h1>
+        </div>
+        <div class="price-card">
+            <img src="img/textile sofa/stul-price-11.png" id="divan4" alt="Пуфик" width="220px"  >
+            <h2 class="heading" align="center" id="divan__text4">Пуфик</h2>
+            <h1 class="heading" align="center" id="divan__price4">От 20р</h1>
+        </div>
+        <div class="price-card">
+            <img src="img/leather sofa/stul-price-12.png" id="divan4" alt="Кожанный пуфик" width="220px"  >
+            <h2 class="heading" align="center" id="divan__text4">Кожанный пуфик</h2>
+            <h1 class="heading" align="center" id="divan__price4">От 30р</h1>
+        </div>
+    </div>
+    <div class="price-block-one">
+        <div class="price-card">
+            <img src="img/textile sofa/divan-1.png" id="divan1" alt="Двухместный диван" width="220px">
+            <h2 class="heading" align="center" id="divan__text1">Двухместный диван</h2">
+            <p class="price-text__p" align="center">2 посадочных места (до 100см)</p>
+            <h1 class="heading" align="center" id="divan__price1">От 30р</h1>
+        </div>
+        <div class="price-card">
+            <img src="img/textile sofa/divan-2.png" id="divan2" alt="Трёхместный диван" width="220px">
+            <h2 class="heading" align="center" id="divan__text2">Трёхместный диван</h2>
+            <p class="price-text__p" align="center">3 посадочных места (до 145см)</p>
+            <h1 class="heading" align="center" id="divan__price2">От 35р</h1>
+        </div>
+        <div class="price-card">
+            <img src="img/textile sofa/divan-3.png" id="divan3" alt="Стандартный угловой диван" width="220px">
+            <h2 class="heading" align="center" id="divan__text3">Стандартный угловой диван</h2>
+            <p class="price-text__p" align="center">4 посадочных места (до 200см)</p>
+            <h1 class="heading" align="center" id="divan__price3">От 40р</h1>
+        </div>
+        <div class="price-card">
+            <img src="img/textile sofa/divan-4.png" id="divan4" alt="Большой угловой диван" width="220px">
+            <h2 class="heading" align="center" id="divan__text4">Большой угловой диван</h2>
+            <p class="price-text__p" align="center">5 посадочных места (до 245см)</p>
+            <h1 class="heading" align="center" id="divan__price4">От 45р</h1>
+        </div>
+    </div>
+    <div class="price-block-one">
+        <div class="price-card">
+            <img src="img/leather sofa/divan-9.png" id="divan1" alt="Двухместный кожанный диван" width="220px"  >
+            <h2 class="heading" align="center" id="divan__text1">Двухместный кожанный диван</h2">
+            <p class="price-text__p" align="center">2 посадочных места (до 100см)</p>
+            <h1 class="heading" align="center" id="divan__price1">От 43р</h1>
+        </div>
+        <div class="price-card">
+            <img src="img/leather sofa/divan-10.png" id="divan2" alt="Трёхместный кожанный диван" width="220px"  >
+            <h2 class="heading" align="center" id="divan__text2">Трёхместный кожанный диван</h2>
+            <p class="price-text__p" align="center">3 посадочных места (до 145см)</p>
+            <h1 class="heading" align="center" id="divan__price2">От 48р</h1>
+        </div>
+        <div class="price-card">
+            <img src="img/leather sofa/divan-11.png" id="divan3" alt="Стандартный кожанный угловой диван" width="220px"  >
+            <h2 class="heading" align="center" id="divan__text3">Стандартный угловой диван</h2>
+            <p class="price-text__p" align="center">4 посадочных места (до 200см)</p>
+            <h1 class="heading" align="center" id="divan__price3">От 53р</h1>
+        </div>
+        <div class="price-card">
+            <img src="img/leather sofa/divan-12.png" id="divan4" alt="Большой кожанный угловой диван" width="220px"  >
+            <h2 class="heading" align="center" id="divan__text4">Большой угловой диван</h2>
+            <p class="price-text__p" align="center">5 посадочных места (до 245см)</p>
+            <h1 class="heading" align="center" id="divan__price4">От 58р</h1>
+        </div>
+    </div>
+</section>
+
+<section class="calc">
+<div class="head-calc">
+    <h1 class="heading" align="center">Как рассчитать стоимость?</h1>
+    <p class="text__p" align="center">Вы можете легко расчитать стоимость заказав звонок у нас!</p>
+    <button class="magnet__button" onclick="modalActive(1)">Заказать звонок</button>
+</div>
+</section>
+
+
+<section class="how-work"> 
+    <div class="how-work-one">
+        <div><img src="img/how/work-1.png" alt="Принимаем заявку" width="84px"></div>
+        <div class="line"></div>
+        <div><img src="img/how/work-2.png" alt="Рассчитываем точную стоимость" width="84px"></div>
+        <div class="line"></div>
+        <div><img src="img/how/work-3.png" alt="Назначаем дату и время" width="84px"></div>
+        <div class="line"></div>
+        <div><img src="img/how/work-4.png" alt="Проводим работы" width="84px"></div>
+        <div class="line"></div>
+        <div><img src="img/how/work-5.png" alt="Подписываем акт" width="84px"></div>
+    </div>
+    <div class="how-work-two">
+        <div>
+            <h3 class="heading">Принимаем заявку</h3>
+            <p class="text__p">Вы оставляете заявку через сайт или позвонив нам по телефону. Мы консультируем и предварительно рассчитываем стоимость работ.
+            </p>
+        </div>
+        <div>
+            <h3 class="heading">Рассчитываем точную стоимость</h3>
+            <p class="text__p">Если вы планируете сделать большой заказ, мы направим к вам в ресторан или кафе менеджера для оценки объема и расчета точной стоимости работ.
+            </p>
+        </div>
+        <div>
+            <h3 class="heading">Назначаем дату и время</h3>
+            <p class="text__p">Определяемся с датой и временем проведения работ. Готовим и согласовываем договор на оказание услуг с пред- или постоплатой.
+            </p>
+        </div>
+        <div>
+            <h3 class="heading">Проводим работы</h3>
+            <p class="text__p">В назначенное время бригада наших мастеров приезжает к вам в заведение и проводит работы по химчистке мебели.
+            </p>
+        </div>
+        <div>
+            <h3 class="heading">Подписываем акт</h3>
+            <p class="text__p">Подписываем акт о сдаче-приемке выполненных работ и производим окончательный взаиморасчет.
+            </p>
+        </div>
+    </div>
+
+
+</section>
+
+
+
 <footer>
     <div class="column">
         <h3>Услуги</h3>
-        <a href="drycleaning-sofa.html">Химчистка диванов</a>
         <a href="drycleaning-furniture.html">Химчистка мягкой мебели</a>
         <a href="drycleaning-leather.html">Химчистка кожаной мебели</a>
+        <a href="drycleaning-sofa.html">Химчистка диванов</a>
         <a href="drycleaning-chair.html">Химчистка стульев</a>
         <a href="drycleaning-armchair.html">Химчистка кресел</a>
         <a href="drycleaning-mattress.html">Химчистка матрасов</a>
@@ -146,8 +413,8 @@
         <h3>Компания</h3>
        <a href="price.html">Цены</a>
        <a href="reviews.html">Отзывы</a>
-       <a href="foto.html">Фотографии работ</a>
-       <a href="facilities.html">Чистящие средства</a>
+       <!-- <a href="foto.html">Фотографии работ</a> -->
+       <!-- <a href="facilities.html">Чистящие средства</a> -->
        <a href="contact.html">Контакты</a>
     </div>
     <div class="column">
@@ -155,7 +422,7 @@
         <a href="tel:+375(29)258-69-13">+375 (29) 258-69-13</a>
         <a href="viber://add?number=375292586913">Viber</a>
         <a href="tg://resolve?domain=antonmikhet">Telegram</a>
-        <a href="mailto:dry.clean.minsk@gmail.com">drycleaning@gmail.com</a>
+        <a href="mailto:dry.clean.minsk@gmail.com">dry.clean.minsk@gmail.com</a>
     </div>
 </footer>
     <div class="modal" method="POST" action="telegram.php" id="modal-block" >
@@ -200,7 +467,13 @@
             <div><a href="facilities.html">Чистищие средства</a> </div>
         </div>
 
-
+        <div class="button-phone" onclick="modalActive(1)"> 
+            <div class="button-phone__text button-phone__after" >Заказать химчистку</div>
+                <svg class="button-phone__icon" style="fill:#ffffff;" width="28px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.6 17.5"> 
+                    <path d="M3.7 17.5v-4.8H2c-1.1 0-2-.9-2-2V2C0 .9.9 0 2 0h14.6c1.1 0 2 .9 2 2v8.8c0 1.1-.9 2-2 2H9l-5.3 4.7zM2 1c-.6 0-1 .4-1 1v8.8c0 .5.4 1 1 1h2.8v3.5l3.8-3.5h8c.5 0 1-.4 1-1V2c0-.5-.4-1-1-1H2z"></path> 
+                </svg> 
+        </div> 
+      
 
     <!-- <script src="libs/jquery/jquery-3.4.1.min.js"></script> -->
     <!-- <script src="libs/owlcarousel2/owl.carousel.min.js"></script> -->

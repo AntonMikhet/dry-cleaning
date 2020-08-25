@@ -19,6 +19,23 @@
     <!-- <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '335242407676383');
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=335242407676383&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
     <header class="header__mobile" id="mobile">
@@ -33,7 +50,7 @@
                         <div id="list">
                                 <ul> 
                                     <li>
-                                        <a class="slidebar_li" href="otzivy.html">Отзывы </a>
+                                        <a class="slidebar_li" href="reviews.html">Отзывы </a>
                                     </li>
                                 
                                 <li>
@@ -44,7 +61,7 @@
                                       <a class="slidebar-item" href="drycleaning-leather.html">Химчистка кожанной мебели</a>
                                       <a class="slidebar-item" href="drycleaning-mattress.html">Химчистка матрасов</a>
                                       <a class="slidebar-item" href="drycleaning-chair.html">Химчистка стульев</a>
-                                      <a class="slidebar-item" href="drycleaning-chair.html">Химчистка кресел</a>
+                                      <a class="slidebar-item" href="drycleaning-armchair.html">Химчистка кресел</a>
                                       <a class="slidebar-item" href="drycleaning-furniture.html">Химчистка мягкой мебели</a>
                                      
 
@@ -62,18 +79,18 @@
                                       <a class="slidebar-item" href="drycleaning-shool.html">Химчистка мебели в школах и вузах</a>
                                     </div>
                                   </li>
-                                <li>
+                               <!-- <li>
                                     <a class="slidebar_li" href="aboutUs.html">О нас</a>
-                                  </li>
-                                  <li>
+                                  </li> -->
+                                  <!-- <li>
                                     <a class="slidebar_li" href="rent.html">Аренда</a>
-                                  </li>
+                                  </li> -->
                                   <li>
                                     <a class="slidebar_li" href="price.html">Цены</a>
                                   </li>
-                                  <li>
+                                  <!-- <li>
                                     <a class="slidebar_li" href="foto.html">Фото</a>
-                                  </li>
+                                  </li> -->
                                   <li>
                                     <a class="slidebar_li" href="contact.html">Контакты</a>
                                   </li>
@@ -114,10 +131,10 @@
     <div class="header-main">
         <div class="header-main__text"><a class="podmenu" onclick="showbar(2)">Услуги</a> </div>
         <div class="header-main__text"><a class="podmenu" onclick="showbar(1)">Организациям</a> </div>
-        <div class="header-main__text"><a class="podmenu" onclick="showbar(3)">О нас</a> </div>
+       <!-- <div class="header-main__text"><a class="podmenu" onclick="showbar(3)">О нас</a> </div> -->
         <div class="header-main__text"><a href="price.html">Цены</a> </div>
-        <div class="header-main__text"><a href="rent.html">Аренда</a> </div>
-        <div class="header-main__text"><a href="foto.html">Фото</a> </div>
+        <!-- <div class="header-main__text"><a href="rent.html">Аренда</a> </div> -->
+        <!-- <div class="header-main__text"><a href="foto.html">Фото</a> </div> -->
         <div class="header-main__text"><a href="reviews.html">Отзывы</a> </div>
         <div class="header-main__text"><a href="contact.html">Контакты</a> </div>
     </div> 
@@ -125,9 +142,9 @@
 </header>
 
 
-<section class="main">
+<section class="main" style="background-image: url(../img/background/kozh-slider.png); background-position-x: 55%;">
     <div class="magnet">
-        <h1 class="magnet__h1">Химчистка диванов</h1>
+        <h1 class="magnet__h1">Химчистка кожанных диванов</h1>
         <div class="magnet__text">
             <p>Удаляем пятна и выводим запахи </p> 
             <p>Работаем только со средствами <br> безопасными для здоровья!</p>
@@ -135,102 +152,129 @@
         <button class="magnet__button" onclick="modalActive(1)">Рассчитать стоимость</button>
     </div>
 </section>
+<section class="leater-class">
+    <h2 class="heading" align="center">Чистим все види кожанной обивки</h2>
+
+    <div class="leather-block">
+        <div class="leather-card">
+            <img src="img/leather/nubuk.png" alt="" width="150px">
+            <h2 align="center" class="heading">Нубук</h2>
+        </div>
+        <div class="leather-card">
+            <img src="img/leather/zamsha.png" alt="" width="150px">
+            <h2 align="center" class="heading">Замша</h2>
+        </div>
+        <div  class="leather-card">
+            <img src="img/leather/lakirovannayakozha.png" alt="" width="150px">
+            <h2 align="center" class="heading">Лакированная кожа</h2>
+        </div>
+    </div>
+    <div class="leather-block">
+        <div class="leather-card">
+            <img src="img/leather/tisnenayakozha.png" alt="" width="150px">
+            <h2 align="center" class="heading">Тиснёная кожа</h2>
+        </div>
+        <div class="leather-card">
+            <img src="img/leather/gladkayakozha.png" alt="" width="150px">
+            <h2 align="center" class="heading">Гладкая кожа</h2>
+        </div>
+        <div class="leather-card">
+            <img src="img/leather/ecokozha.png" alt="" width="150px">
+            <h2 align="center" class="heading">Экокожа</h2>
+        </div>
+    </div>
+</section>
 <section class="description">
     <div>
         <P align="center" class="text__p">Компания Dry Cleaning предлагает профессиональные услуги химчистки диванов и другой мягкой мебели с выездом к заказчику на дом или в офис. Мы работаем по всему Минску и ближайшему пригороду.</P>
     </div>
-</section>
-<section class="qualities">
-    <h1 align="center" class="heading">Химчистка диванов от Dry Cleaning</h1>
-    <div class="qualities-block">
-        <div class="qualities-card">
-            <div class="qualities-card__img">
-                <img src="img/qualities/why-1.png" alt="С нами удобно">
-            </div>
-            <div class="qualities-card__text">
-                <h2>Удобно</h2>
-                <p class="text__p">Проводим химчистку прямо у вас дома или в офисе. Уже через один час ваш диван будет абсолютно чистым.</p>
-            </div>
-        </div>
-        <div class="qualities-card">
-            <div class="qualities-card__img">
-                <img src="img/qualities/why-2.png" alt="С нами безопасно">
-            </div>
-            <div class="qualities-card__text">
-                <h2>Безопасно</h2>
-                <p class="text__p">Используем безопасные для человека и домашних животных моющие средства и пятновыводители.</p>
-            </div>
-        </div>
-        <div class="qualities-card">
-            <div class="qualities-card__img">
-                <img src="img/qualities/why-3.png" alt="Самая эффективная химчистка">
-            </div>
-            <div class="qualities-card__text">
-                <h2>Эффективно</h2>
-                <p class="text__p c">Применяемый метод химчистки позволяет справляться с большинством загрязнений.</p>
-            </div>
-        </div>
-        <div class="qualities-card">
-            <div class="qualities-card__img">
-                <img src="img/qualities/why-4.png" alt="Гарантия качества">
-            </div>
-            <div class="qualities-card__text">
-                <h2>Гарантия</h2>
-                <p class="text__p">Уверенно гарантируем 100% <a href="" style="color: #ff8562;">чистоту</a>  и сохранность текстильной и кожаной обивки мягкой мебели.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="how">
-    <h1 align="center" class="heading">Как мы чистим диваны?</h1>
+    <h1 align="center" class="heading">Химчистка кожанных диванов от Dry Cleaning</h1>
     <div>
-        <p align="center" class="text__p">Химчистка мягкой мебели в Dry Cleaning проводится методом аквачистки. Чтобы больше узнать о технологии, посмотрите видеоролики о том, как мы чистим диваны и удаляем пятна с обивки мягкой мебели.</p>
+        <P align="center" class="text__p">Наша компания предлагает профессиональную химчистку кожаных диванов и другой мебели на дому. Наши мастера справятся с любыми видами загрязнений на кожаной обивке – удалят пятна от еды, пролитых напитков, следы шариковой ручки, крови или кофе.</P>
     </div>
-    <div><p align="center" class="text__p">В отличие от других компаний мы не просто удаляем пятна с обивки, а проводим комплексную химчистку дивана. Мы убираем пыль и мелкий сор из щелей между подушками, спинкой и подлокотниками, очищаем и протираем бельевые ящики. Результат нашей работы – не только видимая чистота, а действительно чистый снаружи и внутри диван!</p>
+    <div>
+        <P align="center" class="text__p">Специалисты Double Clean знают все о правильной чистке деликатного обивочного материала из кожи и проведут ее без вреда для вашей мебели. Работаем по всей Москве и ближнему Подмосковью.
+        </P>
     </div>
-    <div class="examples-box">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-ejXULuMkiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/VsOdUt7lDio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-     </div>
-      </section>
+</section>
 
     <section class="price">
-        <h1 class="heading" align="center">Цены на химчистку диванов и мягкой мебели
+        <h1 class="heading" align="center">Цены на химчистку кожанных диванов и изделий из кожи
         </h1>
         <div class="price__text">
             <p class="text__p"align="center" >Наши цены зависят от степени загрязнения. <br>
             Выезд мастера по В пределах МКАД г. Минска – бесплатный.
             </p>
         </div>
-        <div class="sofa">
-            <div class="texile-sofa heading" id="texile" onclick="price(1)">Текстильная обивка</div>
-            <div class="leather-sofa heading" id="leather" onclick="price(2)"> Кожанная обивка</div>
+
+        <div class="price-block-one">
+            <div class="price-card">
+                <img src="img/leather sofa/divan-9.png" id="divan1" alt="Двухместный кожанный диван" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text1">Двухместный кожанный диван</h2">
+                <p class="price-text__p" align="center">2 посадочных места (до 100см)</p>
+                <h1 class="heading" align="center" id="divan__price1">От 43р</h1>
+            </div>
+            <div class="price-card">
+                <img src="img/leather sofa/divan-10.png" id="divan2" alt="Трёхместный кожанный диван" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text2">Трёхместный кожанный диван</h2>
+                <p class="price-text__p" align="center">3 посадочных места (до 145см)</p>
+                <h1 class="heading" align="center" id="divan__price2">От 48р</h1>
+            </div>
+            <div class="price-card">
+                <img src="img/leather sofa/divan-11.png" id="divan3" alt="Стандартный кожанный угловой диван" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text3">Стандартный угловой диван</h2>
+                <p class="price-text__p" align="center">4 посадочных места (до 200см)</p>
+                <h1 class="heading" align="center" id="divan__price3">От 53р</h1>
+            </div>
+            <div class="price-card">
+                <img src="img/leather sofa/divan-12.png" id="divan4" alt="Большой кожанный угловой диван" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text4">Большой угловой диван</h2>
+                <p class="price-text__p" align="center">5 посадочных места (до 245см)</p>
+                <h1 class="heading" align="center" id="divan__price4">От 58р</h1>
+            </div>
         </div>
         <div class="price-block-one">
             <div class="price-card">
-                <img src="img/textile sofa/divan-1.png" id="divan1" alt="Двухместный диван" width="220px">
-                <h2 class="heading" align="center" id="divan__text1">Двухместный диван</h2">
-                <p class="price-text__p" align="center">2 посадочных места (до 100см)</p>
-                <h1 class="heading" align="center" id="divan__price1">От 30р</h1>
+                <img src="img/leather sofa/divan-13.png" id="divan1" alt="Спальное место кожанного дивана" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text1">Спальное место дивана</h2">
+                <h1 class="heading" align="center" id="divan__price1">От 20р</h1>
             </div>
             <div class="price-card">
-                <img src="img/textile sofa/divan-2.png" id="divan2" alt="Трёхместный диван" width="220px">
-                <h2 class="heading" align="center" id="divan__text2">Трёхместный диван</h2>
-                <p class="price-text__p" align="center">3 посадочных места (до 145см)</p>
-                <h1 class="heading" align="center" id="divan__price2">От 35р</h1>
+                <img src="img/leather sofa/divan-14.png" id="divan2" alt="Подушка из кожи" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text2">Подушка из кожи</h2>
+                <h1 class="heading" align="center" id="divan__price2">От 8р</h1>
             </div>
             <div class="price-card">
-                <img src="img/textile sofa/divan-3.png" id="divan3" alt="Стандартный угловой диван" width="220px">
-                <h2 class="heading" align="center" id="divan__text3">Стандартный угловой диван</h2>
-                <p class="price-text__p" align="center">4 посадочных места (до 200см)</p>
-                <h1 class="heading" align="center" id="divan__price3">От 40р</h1>
+                <img src="img/leather sofa/divan-15.png" id="divan3" alt="Стул из кожи" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text3">Стул из кожи</h2>
+                <h1 class="heading" align="center" id="divan__price3">От 7р</h1>
             </div>
             <div class="price-card">
-                <img src="img/textile sofa/divan-4.png" id="divan4" alt="Большой угловой диван" width="220px">
-                <h2 class="heading" align="center" id="divan__text4">Большой угловой диван</h2>
-                <p class="price-text__p" align="center">5 посадочных места (до 245см)</p>
-                <h1 class="heading" align="center" id="divan__price4">От 45р</h1>
+                <img src="img/leather sofa/divan-16.png" id="divan4" alt="Кресло из кожи" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text4">Кресло из кожи</h2>
+                <h1 class="heading" align="center" id="divan__price4">От 30р</h1>
+            </div>
+        </div>
+        <div class="price-block-one">
+            <div class="price-card">
+                <img src="img/leather sofa/kozh-meb-price-7.png" id="divan1" alt="Кожанный пуф" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text1">Кожанный пуф</h2">
+                <h1 class="heading" align="center" id="divan__price1">От 20р</h1>
+            </div>
+            <div class="price-card">
+                <img src="img/leather sofa/kozh-meb-price-12.png" id="divan2" alt="Офисный кожанный стул" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text2">Офисный кожанный стул</h2>
+                <h1 class="heading" align="center" id="divan__price2">От 11р</h1>
+            </div>
+            <div class="price-card">
+                <img src="img/leather sofa/kozh-meb-price-11.png" id="divan3" alt="Офисное кожанное кресло" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text3">Офисное кожанное кресло</h2>
+                <h1 class="heading" align="center" id="divan__price3">От 20р</h1>
+            </div>
+            <div class="price-card">
+                <img src="img/leather sofa/kozh-meb-price-10.png" id="divan4" alt="Кожанное кресло руководителя" width="220px"  >
+                <h2 class="heading" align="center" id="divan__text4">Кресло руководителя</h2>
+                <h1 class="heading" align="center" id="divan__price4">От 30р</h1>
             </div>
         </div>
     </section>
@@ -242,69 +286,47 @@
         <button class="magnet__button" onclick="modalActive(1)">Заказать звонок</button>
     </div>
     </section>
+    <section class="qualities">
+        <h2 align="center" class="heading">4 причины выбрать химчистку Dry Cleaning</h2>
+        <div class="qualities-block">
+            <div class="qualities-card">
+                <div class="qualities-card__img">
+                    <img src="img/qualities/why-1.png" alt="С нами удобно">
+                </div>
+                <div class="qualities-card__text">
+                    <h2>Удобно</h2>
+                    <p class="text__p">Проводим химчистку прямо у вас дома или в офисе. Уже через один час ваш диван будет абсолютно чистым.</p>
+                </div>
+            </div>
+            <div class="qualities-card">
+                <div class="qualities-card__img">
+                    <img src="img/qualities/why-2.png" alt="С нами безопасно">
+                </div>
+                <div class="qualities-card__text">
+                    <h2>Безопасно</h2>
+                    <p class="text__p">Используем безопасные для человека и домашних животных моющие средства и пятновыводители.</p>
+                </div>
+            </div>
+            <div class="qualities-card">
+                <div class="qualities-card__img">
+                    <img src="img/qualities/why-3.png" alt="Самая эффективная химчистка">
+                </div>
+                <div class="qualities-card__text">
+                    <h2>Эффективно</h2>
+                    <p class="text__p c">Применяемый метод химчистки позволяет справляться с большинством загрязнений.</p>
+                </div>
+            </div>
+            <div class="qualities-card">
+                <div class="qualities-card__img">
+                    <img src="img/qualities/why-4.png" alt="Гарантия качества">
+                </div>
+                <div class="qualities-card__text">
+                    <h2>Гарантия</h2>
+                    <p class="text__p">Уверенно гарантируем 100% <a href="" style="color: #ff8562;">чистоту</a>  и сохранность текстильной и кожаной обивки мягкой мебели.</p>
+                </div>
+            </div>
 
-    <section class="examples">
-        <h1 class="heading" align="center">Результаты нашей работы</h1>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
-            <div class="examples-line"> 
-                <div class="examples-block"><img src="img/examples/foto-divan-01.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-02.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-03.jpg" alt=""></div>
-                <div class="examples-block"><img src="img/examples/foto-divan-04.jpg" alt=""></div>
-            </div>
+        </div>
     </section>
 
     <section class="questions">
@@ -395,9 +417,9 @@
 <footer>
     <div class="column">
         <h3>Услуги</h3>
-        <a href="drycleaning-sofa.html">Химчистка диванов</a>
         <a href="drycleaning-furniture.html">Химчистка мягкой мебели</a>
         <a href="drycleaning-leather.html">Химчистка кожаной мебели</a>
+        <a href="drycleaning-sofa.html">Химчистка диванов</a>
         <a href="drycleaning-chair.html">Химчистка стульев</a>
         <a href="drycleaning-armchair.html">Химчистка кресел</a>
         <a href="drycleaning-mattress.html">Химчистка матрасов</a>
@@ -414,8 +436,8 @@
         <h3>Компания</h3>
        <a href="price.html">Цены</a>
        <a href="reviews.html">Отзывы</a>
-       <a href="foto.html">Фотографии работ</a>
-       <a href="facilities.html">Чистящие средства</a>
+       <!-- <a href="foto.html">Фотографии работ</a> -->
+       <!-- <a href="facilities.html">Чистящие средства</a> -->
        <a href="contact.html">Контакты</a>
     </div>
     <div class="column">
@@ -423,7 +445,7 @@
         <a href="tel:+375(29)258-69-13">+375 (29) 258-69-13</a>
         <a href="viber://add?number=375292586913">Viber</a>
         <a href="tg://resolve?domain=antonmikhet">Telegram</a>
-        <a href="mailto:dry.clean.minsk@gmail.com">drycleaning@gmail.com</a>
+        <a href="mailto:dry.clean.minsk@gmail.com">dry.clean.minsk@gmail.com</a>
     </div>
 </footer>
     <div class="modal" method="POST" action="telegram.php" id="modal-block" >
@@ -468,7 +490,13 @@
             <div><a href="facilities.html">Чистищие средства</a> </div>
         </div>
 
-
+        <div class="button-phone" onclick="modalActive(1)"> 
+            <div class="button-phone__text button-phone__after" >Заказать химчистку</div>
+                <svg class="button-phone__icon" style="fill:#ffffff;" width="28px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.6 17.5"> 
+                    <path d="M3.7 17.5v-4.8H2c-1.1 0-2-.9-2-2V2C0 .9.9 0 2 0h14.6c1.1 0 2 .9 2 2v8.8c0 1.1-.9 2-2 2H9l-5.3 4.7zM2 1c-.6 0-1 .4-1 1v8.8c0 .5.4 1 1 1h2.8v3.5l3.8-3.5h8c.5 0 1-.4 1-1V2c0-.5-.4-1-1-1H2z"></path> 
+                </svg> 
+        </div> 
+      
 
     <!-- <script src="libs/jquery/jquery-3.4.1.min.js"></script> -->
     <!-- <script src="libs/owlcarousel2/owl.carousel.min.js"></script> -->
