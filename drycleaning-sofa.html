@@ -19,23 +19,7 @@
     <!-- <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '335242407676383');
-        fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=335242407676383&ev=PageView&noscript=1"
-        /></noscript>
-    <!-- End Facebook Pixel Code -->
+</head>
 </head>
 <body>
     <header class="header__mobile" id="mobile">
@@ -148,8 +132,16 @@
             <p>Удаляем пятна и выводим запахи </p> 
             <p>Работаем только со средствами <br> безопасными для здоровья!</p>
         </div>
-        <button class="magnet__button" onclick="modalActive(1)">Рассчитать стоимость</button>
-    </div>
+            <div class="button-main-block">
+                                <div>
+                                        <button class="magnet__button button-main mobile-hide" onclick="modalActive(1)">
+                                                Заказать химчиску ⏱ сразу
+                                        </button>
+                                </div>
+                                <div class="quiz-block">
+                                        <a href="http://leads-one.tilda.ws/dry-clean"><button class="button_quiz">Рассчитать стоимоть +<br>Зафиксировать подарок 🎁</button></a>
+                                </div>
+                        </div>
 </section>
 <section class="description">
     <div>
@@ -438,25 +430,64 @@
     <div class="column">
         <H3>Контакты</H3>
         <a href="tel:+375(29)258-69-13">+375 (29) 258-69-13</a>
-        <a href="viber://add?number=375292586913">Viber</a>
-        <a href="tg://resolve?domain=antonmikhet">Telegram</a>
-        <a href="mailto:dry.clean.minsk@gmail.com">dry.clean.minsk@gmail.com</a>
+        <a href="viber://add?number=375292586913"><img src="img/Icons/viber.png" width="20px" alt="Связаться в Viber"> Viber</a>
+        <a href="tg://resolve?domain=antonmikhet"><img src="img/Icons/telegram.png" width="20px" alt="Связаться в Telegram"> Telegram</a>
+        <a href="mailto:dry.clean.minsk@gmail.com"><img src="img/Icons/letter.svg" width="20px" alt="Связаться с нами по почте"> dry.clean.minsk@gmail.com</a>
     </div>
 </footer>
     <div class="modal" method="POST" action="telegram.php" id="modal-block" >
         <div class="modal-burger" onclick="modalActive(2)">
         <div class="modal-burger-one"></div> <div class="modal-burger-two"></div>
         </div>
-        <form class="modal-case"  method="POST" action="telegram.php"> 
-            <h1 class="heading" align="center">Рассчитать стоимость</h1>
-            <p class="text__p" align="center">Отправьте ваш телефон и мы перезвоним вам для уточнения деталей заказа!</p>
-            <input type="text" name="name"  class="modal-input form-control" value="" placeholder="Ваше имя" tabindex="1" required>
-            <input type="tel" name="phone" class="modal-input form-control" value="" placeholder="Ваш телефон" tabindex="2" required>
-            <textarea type="text" name="comment" class="modal-textarea form-control" placeholder="Комментарий к заказу" rows="4" tabindex="3"></textarea>
-            <button name="formservices" type="submit" class="modal-button">Отправить</button>
-            <p class="text__p soglasie" align="center">Нажимая на кнопку «Отправить», я даю 
-          <a href="/soglasie" align="center">согласие на обработку моих персональных данных</a>.</p>
-            </form>
+         <form action=mail.php class=modal-case id=form method=POST>
+                        <h2 align=center class=heading>
+                                Рассчитать стоимость
+                        </h2>
+                        <p class=text__p align=center>
+                                Отправьте ваш телефон и мы перезвоним вам для уточнения деталей заказа!
+                                <div class=form-flex>
+                                        
+                                        <input id=name name=name class="form-control modal-input" placeholder="Ваше имя"
+                                        required tabindex=1>
+                                        <input id=phone name=phone type=tel class="form-control modal-input input-form"
+                                        placeholder="+375 (29) 258-69-13" required tabindex=2>
+                                        <input id=comment name=comment class="form-control modal-input" placeholder="Ваш комментарий"
+                                        tabindex=3>
+                                </div>
+                                <div class=form-bolean>
+                                        <div class=form-block-one>
+                                                <p>
+                                                        <input id=divan name=divan type=checkbox value=Диван>
+                                                        <span>
+                                                                Диван
+                                                        </span>
+                                                        <p>
+                                                                <input id=matras name=matras type=checkbox value=Матрас>
+                                                                <span>
+                                                                        Матрас
+                                                                </span>
+                                        </div>
+                                        <div class=form-block-two>
+                                                <p>
+                                                        <input id=kover name=kover type=checkbox value=Ковёр>
+                                                        <span>
+                                                                Ковровое покрытие
+                                                        </span>
+                                                        <p>
+                                                                <input id=furniture name=furniture type=checkbox value="Другая мягкая мебель">
+                                                                <span>
+                                                                        Другая мягкая мебель
+                                                                </span>
+                                        </div>
+                                </div>
+                                <button class=modal-button id=send123 type=submit>
+                                        Отправить
+                                </button>
+                                <p class="text__p soglasie" align=center>
+                                        Нажимая на кнопку «Отправить», я даю
+                                        <a href=soglasie.html align=center>согласие на обработку моих персональных данных</a>
+                                        .
+                </form>
     </div>
 
 
@@ -493,8 +524,8 @@
       
 
 
-    <!-- <script src="libs/jquery/jquery-3.4.1.min.js"></script> -->
-    <!-- <script src="libs/owlcarousel2/owl.carousel.min.js"></script> -->
-    <script src="js/custom.js"></script>
+
+<script src="js/custom.js"></script>
+<!-- <script src="libs/owlcarousel2/owl.carousel.min.js"></script> -->
 </body>
 </html>

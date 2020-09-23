@@ -1,7 +1,25 @@
+@keyframes dinamicAnimation  
+    from 
+        transform: scale(1, 1)
+    25%
+        transform: scale(1.07, 1.07)
+    50% 
+        transform: scale(1, 1)
+    75%
+        transform: scale(1, 1)
+    to
+@keyframes buttonAnimation  
+    from 
+        transform: scale(1, 1)
+    50%
+        transform: scale(1.07, 1.07)
+    to
+
 html 
 body
     font-family: Roboto, Arial, sans-serif
     margin: 0
+    background-color: #fff
 section 
     margin-bottom: 60px
 button 
@@ -27,6 +45,8 @@ button
     border-style: outset
     border-color: -internal-light-dark-color(rgb(118, 118, 118), rgb(195, 195, 195))
     border-image: initial
+button:hover
+    animation: buttonAnimation 0.4s
 .btn-nav
     font-size: 15px
     background-color: #e0812d
@@ -39,7 +59,6 @@ button
     margin-left: -30px
     -webkit-box-shadow: none
     box-shadow: none
-
 .desctop-header
     display: flex
     position: fixed
@@ -53,6 +72,7 @@ button
     height: 80px
     width: 100%
     z-index: 200
+    box-shadow:  1px 1px 1px #30303063 
 .header-main
     display: flex
     flex-direction: row
@@ -128,9 +148,23 @@ button
     color: #ffffff
     background-color: #ff7547
     border-radius: 15px
+    border: 1px solid #ff7547 !important
     height: 60px
     padding: 0 60px 0 60px
     font-size: 16px
+    border: 0
+
+.button_quiz
+    background-color: #ff7547
+    animation: dinamicAnimation 1.5s infinite
+    animation-delay: 2s
+    color: #ffffff
+    border-radius: 15px
+    height: 60px
+    padding: 10px 60px 10px 60px
+    font-size: 18px
+    margin-left: 100px 
+    margin-top: 50px
     border: 0
 .description div > p
     font-size: 18px
@@ -144,7 +178,7 @@ button
     margin-top: 100px
 .qualities
     width: 100%
-.qualities > h1
+.qualities > h2
     font-size: 32px
     color: rgb(47, 62, 83)
 .qualities-block
@@ -180,7 +214,9 @@ button
 .examples-box div > iframe
     width: 560px
     height: 315px
-.how > h1 
+
+.how > h2
+    font-size: 30px
 
 .how > div
     margin-left: 10%
@@ -191,6 +227,7 @@ button
     font-weight: 600
     color: #2f3e53
     text-decoration: none
+    margin-top: 60px
 .text__p
     font-size: 16px
     font-family: 'Roboto',Arial,sans-serif
@@ -252,15 +289,16 @@ button
     height: 200px
     margin-top: 100px
     padding: 100px 0 100px 0
+    margin-bottom: 0
 .head-calc
     width: 60%
     margin: 0px auto
-.head-calc > h1 
+.head-calc > h2
     font-size: 30px
 .head-calc > p
     font-size: 20px
-.examples > h1
-    font-size: 35px
+.examples > h2
+    font-size: 30px
 .examples-line
     display: flex
     width: 100%
@@ -269,7 +307,7 @@ button
     width: 25%
 .examples-block > img
     width: 100%
-.questions > h1 
+.questions > h2 
     font-size:  30px
 .questions-block
     width: 40%
@@ -334,10 +372,25 @@ footer
     color:#000000
     border: 1px solid #c9c9c9
     border-radius: 6px
-    width: 80%
-    margin: 5px 0 5px 10%
     height: 50px
     font-size: 16px
+    padding-left: 10px
+    width: 80%
+
+.form-flex
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+.form-flex > input
+    margin: 5px auto
+.form-flex-phone
+    display: flex
+    width: 100%
+.form-flex-phone > input
+    margin: 5px auto
+
+    
+
 .modal-textarea
     color:#000000
     border: 1px solid #c9c9c9
@@ -390,7 +443,7 @@ footer
     animation-duration: 350ms
     position: fixed
     top: 61px
-    left: 400px
+    left: 500px
     margin-top: 15px
     display: none
     z-index: 221
@@ -448,7 +501,7 @@ footer
 .active
     display: block !important
 .services
-    left: 280px
+    left: 310px
 .aboutUs 
     left: 580px 
 .header__mobile
@@ -573,7 +626,7 @@ footer
     left: initial
     cursor: pointer
     position: fixed
-    z-index: 1000
+    z-index: 100
     height: 60px
     width: 60px
     border-radius: 50%
@@ -581,7 +634,9 @@ footer
     -webkit-transition: all 0.2s linear
     transition: all 0.2s linear
     background-color: #ff7547
-
+.button-phone:hover
+    animation: buttonAnimation 0.3s
+    
 .button-phone__icon >path
     position: relative
     margin: 5px auto
@@ -678,3 +733,128 @@ footer
     margin-top: 100px
     width: 80%
     margin-left: 10%
+.form-bolean
+    display: flex
+    justify-content: space-around
+    width: 80%
+    margin-left: 10%
+.form-block-one
+    display: flex
+    flex-direction: column
+    width: 45%
+    font-family: Roboto, Arial, sans-serif
+    color: #2f3e53
+
+.form-block-two
+    display: flex
+    flex-direction: column
+    width: 55%
+    font-family: Roboto, Arial, sans-serif
+    color: #2f3e53
+#error-msg 
+    color: red
+    margin-left: 50px
+#valid-msg 
+    color: #00C900
+    margin-left: 50px
+input.error 
+    border: 1px solid #FF7C7C
+.hide 
+    display: none !important
+.thanks
+    position: absolute
+    left: 20%
+    top: 20%
+    width: 60%
+    height: 25%
+    border: 1px solid #2f3e53
+    background: #ffffff
+    box-shadow:  5px 5px 5px #38383879
+    border-radius: 9px
+    padding: 30px 10px 10px 10px
+    color: #2f3e53
+    font-family: Roboto, Arial, sans-serif
+.desctop-hide
+    display: none
+.timer
+    display: flex
+    width: 300px 
+    font-size: 39px 
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    color: black
+    position: relative
+    left: 430px
+    margin-top: -5%
+    
+.block
+    border: 2px solid #000
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    background-color: #ffffffc5
+    width: 80px
+    line-height: 74px
+.t
+    margin-left: 17px
+.button-main-block
+    display: flex
+.button-main
+    background-color: rgba(0, 0, 0, 0) 
+    color: black
+    border: 2px solid #ff7547 !important
+.video
+    background-color: #b60000
+    text-transform: uppercase
+    font-weight: 600
+    font-family: Roboto, Arial, sans-serif
+    width: 324px
+.how > .video-block
+    margin: 0 auto
+    width: 324px
+#buttonHide
+    display: none
+.wrap_block_success
+    width: 70%
+    margin: 50px auto
+    height: 500px
+    background-color: #0fb4bd
+    border-radius: 25px
+    box-shadow:  20px 20px 60px #444343a2
+.thanks-page
+    background-color: #d3d3d3
+    font-family: Roboto, Arial, sans-serif
+.block_success
+    padding: 15% 10% 0 10%
+.block_success div
+    width: 360px
+    margin: 0 auto
+.block_success div a > button
+    width: 360px
+.congrats
+    font-size: 29px
+.slidebar
+    display: none
+.soglasie-str
+    color: #2f3e53
+    width: 90%
+    margin-left: 5%
+    margin-top: 150px
+.sale
+    width: 70%
+    margin: 50px 15% 50px 15%
+    
+    align-items: center
+.sale > h2
+    font-size: 30px
+.block-sale
+    display: flex
+    justify-content: space-around
+.block-sale > p
+    color: #2f3e53
+    width: 500px
+    margin-top: 80px
+    font-size: 19px
+.block-sale p > span
+    font-weight: 800
