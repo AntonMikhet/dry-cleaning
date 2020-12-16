@@ -40,30 +40,56 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 window.onload = function pricesLoad() {
-    
+
+
+
     var divan__price1 = document.getElementById("divan__price1");
     divan__price1.innerHTML="От " + texileDivan2;
-   
+    var divan__priceOld1 = document.getElementById('divan_old__price1');
+    divan__priceOld1.innerHTML="От " + texileDivanOld2;
+
+
     var divan__price2 = document.getElementById("divan__price2");
     divan__price2.innerHTML="От " + texileDivan3;
+    var divan__priceOld2 = document.getElementById('divan_old__price2');
+    divan__priceOld2.innerHTML="От " + texileDivanOld3;
 
+    
     var divan__price3 = document.getElementById("divan__price3");
     divan__price3.innerHTML="От " + texileDivan4;
+    var divan__priceOld3 = document.getElementById('divan_old__price3');
+    divan__priceOld3.innerHTML="От " + texileDivanOld4;
+
 
     var divan__price4 = document.getElementById("divan__price4");
     divan__price4.innerHTML="От " + texileDivan5;
+    var divan__priceOld4 = document.getElementById('divan_old__price4');
+    divan__priceOld4.innerHTML="От " + texileDivanOld5;
+
 
     var divan__price5 = document.getElementById("divan__price5");
     divan__price5.innerHTML="От " + kover + " за м²";
+    var divan__priceOld5 = document.getElementById('divan_old__price5');
+    divan__priceOld5.innerHTML="От " + koverOld + " за м²";
+
 
     var divan__price6 = document.getElementById("divan__price6");
     divan__price6.innerHTML="От " + podushka ;
+    var divan__priceOld6 = document.getElementById('divan_old__price6');
+    divan__priceOld6.innerHTML="От " + podushkaOld ;
+
 
     var divan__price7 = document.getElementById("divan__price7");
     divan__price7.innerHTML="От " + stul;
+    var divan__priceOld7 = document.getElementById('divan_old__price7');
+    divan__priceOld7.innerHTML="От " + stulOld;
+
 
     var divan__price8 = document.getElementById("divan__price8");
     divan__price8.innerHTML="От " + kreslo;
+    var divan__priceOld8 = document.getElementById('divan_old__price8');
+    divan__priceOld8.innerHTML="От " + kresloOld;
+    setTimeout(video,2000);
 };
 
 function price(leathertexile) {
@@ -80,34 +106,43 @@ function price(leathertexile) {
             document.getElementById("divan1").src="img/textile sofa/divan-1.png"
             document.getElementById("divan__text1").innerHTML="Двухместный диван"
             divan__price1.innerHTML="От " + texileDivan2;
+            document.getElementById('divan_old__price1').innerHTML="От " + texileDivanOld2;
+
 
             document.getElementById("divan2").src="img/textile sofa/divan-2.png"
             document.getElementById("divan__text2").innerHTML="Трёхместныйд иван"
             divan__price2.innerHTML="От " + texileDivan3;
+            document.getElementById('divan_old__price2').innerHTML="От " + texileDivanOld3;
 
             document.getElementById("divan3").src="img/textile sofa/divan-3.png"
             document.getElementById("divan__text3").innerHTML="Стандартный угловой диван"
             divan__price3.innerHTML="От " + texileDivan4;
+            document.getElementById('divan_old__price3').innerHTML="От " + texileDivanOld4;
 
             document.getElementById("divan4").src="img/textile sofa/divan-4.png"
             document.getElementById("divan__text4").innerHTML="Большой угловой диван"
             divan__price4.innerHTML="От " + texileDivan5;
+            document.getElementById('divan_old__price4').innerHTML="От " + texileDivanOld5;
 
             document.getElementById("divan5").src="img/textile sofa/kover.png"
             document.getElementById("divan__text5").innerHTML="Ковёр(короткий ворс)"
             divan__price5.innerHTML="От " + kover + " за м²";
+            document.getElementById('divan_old__price5').innerHTML="От " + koverOld + " за м²";
 
             document.getElementById("podushka").src="img/textile sofa/divan-7.png"
             document.getElementById("divan__text6").innerHTML="Подушка"
             divan__price6.innerHTML="От " + podushka;
+            document.getElementById('divan_old__price6').innerHTML="От " + podushkaOld ;
 
             document.getElementById("stul").src="img/textile sofa/divan-8.png"
             document.getElementById("divan__text7").innerHTML="Стул"
             divan__price7.innerHTML="От " + stul;
+            document.getElementById('divan_old__price7').innerHTML="От " + stulOld;
 
             document.getElementById("kreslo").src="img/textile sofa/divan-6.png"
             document.getElementById("divan__text8").innerHTML="Кресло"
             divan__price8.innerHTML="От " + kreslo;
+            document.getElementById('divan_old__price8').innerHTML="От " + kresloOld;
 
             break;
         case 2:
@@ -122,34 +157,43 @@ function price(leathertexile) {
             document.getElementById("divan1").src="img/leather sofa/divan-9.png"
             document.getElementById("divan__text1").innerHTML="Кожанный диван"
             document.getElementById("divan__price1").innerHTML="От " + leatherDivan2;
+            document.getElementById('divan_old__price1').innerHTML="От " + leatherDivanOld2;
 
             document.getElementById("divan2").src="img/leather sofa/divan-10.png"
             document.getElementById("divan__text2").innerHTML="Трёхместный кожанный диван"
             document.getElementById("divan__price2").innerHTML="От " + leatherDivan3;
+            document.getElementById('divan_old__price2').innerHTML="От " + leatherDivanOld3;
 
             document.getElementById("divan3").src="img/leather sofa/divan-11.png"
             document.getElementById("divan__text3").innerHTML="Угловой кожанный диван"
             document.getElementById("divan__price3").innerHTML="От " + leatherDivan4;
+            document.getElementById('divan_old__price3').innerHTML="От " + leatherDivanOld4;
 
             document.getElementById("divan4").src="img/leather sofa/divan-12.png"
             document.getElementById("divan__text4").innerHTML="Большой угловой кожанный диван"
             document.getElementById("divan__price4").innerHTML="От " + leatherDivan5;
+            document.getElementById('divan_old__price4').innerHTML="От " + leatherDivanOld5;
 
             document.getElementById("divan5").src="img/leather sofa/divan-13.png"
             document.getElementById("divan__text5").innerHTML="Спальное место кожанного дивана"
             document.getElementById("divan__price5").innerHTML="От " + leatherMesto;
+            document.getElementById('divan_old__price5').innerHTML="От " + leatherMestoOld;
+
 
             document.getElementById("podushka").src="img/leather sofa/divan-14.png"
             document.getElementById("divan__text6").innerHTML="Подушка из кожи"
             document.getElementById("divan__price6").innerHTML="От " + leatherPodushka;
+            document.getElementById('divan_old__price6').innerHTML="От " + leatherPodushkaOld;
 
             document.getElementById("stul").src="img/leather sofa/divan-15.png"
             document.getElementById("divan__text7").innerHTML="Стул из кожи"
             document.getElementById("divan__price7").innerHTML="От " + leatherStul;
+            document.getElementById('divan_old__price7').innerHTML="От " + leatherStulOld;
 
             document.getElementById("kreslo").src="img/leather sofa/divan-16.png"
             document.getElementById("divan__text8").innerHTML="Кожанное кресло"
             document.getElementById("divan__price8").innerHTML="От " + leatherKreslo;
+            document.getElementById('divan_old__price8').innerHTML="От " + leatherKresloOld;
 
             
             break;
@@ -293,3 +337,137 @@ function showbar(onOff) {
 //             break;
 //     };
 // }
+
+function ad() {
+  
+    let myUrl = window.location.href;
+    const url = new URL(myUrl);
+    const params = new URLSearchParams(url.search);
+    let source = params.get("utm_source");
+    let ad = params.get("utm_ad");
+    document.getElementById("urlSource").value = source;
+    document.getElementById('urlAd').value = ad; 
+    
+}
+
+
+function urlQuiz() {
+    let search = window.location.search;
+    document.getElementById("quizButton").href = "http://yarec.media.tilda.ws/dry-clean" + search;
+}
+function video() {
+    document.getElementById('video-one').innerHTML = '<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/-ejXULuMkiQ"></iframe>'
+    document.getElementById('video-two').innerHTML = '<iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/VsOdUt7lDio"></iframe>'
+}
+
+
+
+setTimeout(ad,1000);
+setTimeout(urlQuiz,1000);
+
+
+
+
+
+
+var datenow = new Date()
+var yeardate = datenow.getFullYear(datenow);
+var monthdate = datenow.getMonth(datenow);
+var monthdatetimer = datenow.getMonth(datenow) + 1;
+var daydate = datenow.getDate(datenow) + 2;
+
+var datetimer = monthdatetimer + "-" + daydate + "-" + yeardate; 
+var countDownDate = new Date(datetimer.replace(/-/g, "/")).getTime();
+
+if (monthdate == 1) {
+    monthdate = " Января"
+} else if (monthdate == 1) {
+    monthdate = " Февраля"
+} else if (monthdate == 2) {
+    monthdate = " Марта"
+} else if (monthdate == 3) {
+    monthdate = " Апреля"
+} else if (monthdate == 4) {
+    monthdate = " Мая"
+} else if (monthdate == 5) {
+    monthdate = " Июня"
+} else if (monthdate == 6) {
+    monthdate = " Июля"
+} else if (monthdate == 7) {
+    monthdate = " Августа"
+} else if (monthdate == 8) {
+    monthdate = " Сентярбря"
+} else if (monthdate == 9) {
+    monthdate = " Октября"
+} else if (monthdate == 10) {
+    monthdate = " Ноября"
+} else if (monthdate == 11) {
+    monthdate = " Декабря"
+} 
+var date = daydate + monthdate;
+document.getElementById('date').innerHTML = date;
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+   if (days == 0) {
+        var daystext = ' Дней ';
+   } else if (days == 1) {
+        var daystext = ' День ';
+   } else if (days > 1 && days < 5) {
+        var daystext = ' Дня ';
+   } else if (days > 4) {
+        var daystext = ' Дней ';
+   }
+   if (hours == 0) {
+       var hourstext = " Часов"
+   } else if (hours == 1) {
+        var hourstext = " Час"
+   } if (hours > 1 && hours < 5) {
+        var hourstext = " Часа"
+   } if (hours > 5) {
+        var hourstext = " Часов"
+   }
+   if (/0/.test(minutes) == 1) {
+       var minutestext = " Минут"
+   } else if (/1/.test(minutes) == 1) {
+        var minutestext = " Минута"
+   } else if (/2/.test(minutes) == 1) {
+        var minutestext = " Минуты"
+   } else if (/3/.test(minutes) == 1) {
+    var minutestext = " Минуты"
+    } else if (/4/.test(minutes) == 1) {
+        var minutestext = " Минуты"
+    } else if (/5/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } else if (/6/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } else if (/7/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } else if (/8/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } else if (/9/.test(minutes) == 1) {
+        var minutestext = " Минут"
+    } 
+
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = '<div class="timerbox">' + days + daystext + '</div>' + '<div class="timerbox">' + hours + hourstext + '</div>' + '<div class="timerbox">' +
+    + minutes + minutestext + '</div>' + '<div class="timerbox">' + seconds + " Секунд" + '</div>';
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = '<div class="timerbox"> Время вышло </div>';
+    }
+}, 1000);

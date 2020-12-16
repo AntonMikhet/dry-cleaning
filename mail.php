@@ -35,9 +35,19 @@ $furniture = urldecode($furniture);
 $furniture = trim($furniture);
 
 
+$urlSource = $_POST['urlSource'];
+$urlSource = htmlspecialchars($urlSource);
+$urlSource = urldecode($urlSource);
+$urlSource = trim($urlSource);
+
+$urlAd = $_POST['urlAd'];
+$urlAd = htmlspecialchars($urlAd);
+$urlAd = urldecode($urlAd);
+$urlAd = trim($urlAd);
+
 $subject = "=?utf-8?B?".base64_encode("Заявка Dry Cleaning")."?=";
-$headers = "From: drycleaning@gmail.com\r\nContent-type: text/html; charset=utf-8\r\n";
-$message = 'Имя: ' .$name. '<br/>Номер телефона: +' .$phone. '<br/>Комментарий: ' .$comment. '<br/> Мебель: ' .$divan. '<br/>' .$kover. '<br/>' .$matras. '<br/>' .$furniture;  
+$headers = "From: dry.clean.minsk@gmail.com\r\nContent-type: text/html; charset=utf-8\r\n";
+$message = 'Имя: ' .$name. '<br/>Номер телефона: +' .$phone. '<br/>Комментарий: ' .$comment. '<br/> Мебель: ' .$divan. '<br/>' .$kover. '<br/>' .$matras. '<br/>' .$furniture. '<br/> Источник: ' .$urlSource. '<br/> Объявление: ' .$urlAd;  
 
 if (mail("dry.clean.minsk@gmail.com", $subject, $message ,$headers))
 {header("Location: thanks.html");}     

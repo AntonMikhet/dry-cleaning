@@ -19,7 +19,43 @@
     <!-- <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owlcarousel2/assets/owl.theme.default.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-</head>
+   <script>
+       var texileDivan2 = "30р- 40р";
+        var texileDivan3 = "35р- 45р";
+        var texileDivan4 = "40р- 50р";
+        var texileDivan5 = "45р- 50р";
+        var kover = "5р- 8р";
+        var podushka = "4р- 8р"
+        var stul = "5р- 10р";
+        var kreslo = "20р- 28р";
+
+        var leatherDivan2 = "40р- 50р";
+        var leatherDivan3 = "47р- 53р";
+        var leatherDivan4 = "53р- 60р";
+        var leatherDivan5 = "60р- 65р";
+        var leatherPodushka = "7р- 15р"
+        var leatherStul = "8р- 16р";
+        var leatherKreslo = "30р- 45р";
+        var leatherMesto = "20р- 30р"; 
+
+        var texileDivanOld2 ="45р- 55р";
+        var texileDivanOld3 ="50р- 60р";
+        var texileDivanOld4 ="55р- 65р";
+        var texileDivanOld5 ="60р- 70р";
+        var koverOld = "8р- 10р";
+        var podushkaOld = "7р- 10р"
+        var stulOld = "10р- 13р";
+        var kresloOld = "25р- 31р";
+
+        var leatherDivanOld2 = "58р- 65р";
+        var leatherDivanOld3 = "63р- 70р";
+        var leatherDivanOld4 = "70р- 78р";
+        var leatherDivanOld5 = "78р- 80р";
+        var leatherPodushkaOld = "15р- 19р"
+        var leatherStulOld = "14р- 18р";
+        var leatherKresloOld = "40р- 55р";
+        var leatherMestoOld = "30р- 35р";
+    </script>
 </head>
 <body>
     <header class="header__mobile" id="mobile">
@@ -108,40 +144,58 @@
           </section>
     </header>
 
-    <header class="header__desctop">
-    </header>
-<header class="desctop-header">
-    <div class="header-logo"><a href="index.html"><img src="img/logo.png"  alt="Dry Cleaning- лучшая химчистка в Минске!"></a> </div>
-    <div class="header-main">
-        <div class="header-main__text"><a class="podmenu" onclick="showbar(2)">Услуги</a> </div>
-        <div class="header-main__text"><a class="podmenu" onclick="showbar(1)">Организациям</a> </div>
-       <!-- <div class="header-main__text"><a class="podmenu" onclick="showbar(3)">О нас</a> </div> -->
-        <div class="header-main__text"><a href="price.html">Цены</a> </div>
-        <!-- <div class="header-main__text"><a href="rent.html">Аренда</a> </div> -->
-        <!-- <div class="header-main__text"><a href="foto.html">Фото</a> </div> -->
-        <div class="header-main__text"><a href="reviews.html">Отзывы</a> </div>
-        <div class="header-main__text"><a href="contact.html">Контакты</a> </div>
-    </div> 
-    <div class="header-number"><a href="tel:+375292586913">+ 375 (29) 258-69-13</a> </div>
-</header>
+    <header class="desctop-header">
+                <div class="header-logo">
+                        <a href="index.html"><img alt="Dry Cleaning- лучшая химчистка в Минске!" src="img/logo.png"></a>
+                </div>
+                <div class="header-main">
+                        <div class="header-main__text">
+                                <a class="podmenu" onclick="showbar(2)">Услуги</a>
+                        </div>
+                        <div class="header-main__text">
+                                <a class="podmenu" onclick="showbar(1)">Организациям</a>
+                        </div>
+                        <div class="header-main__text">
+                                <a href="price.html">Цены</a>
+                        </div>
+                        <div class="header-main__text">
+                                <a href="question.html">Вопросы</a>
+                        </div>
+                        <div class="header-main__text">
+                                <a href="foto.html">Фото</a>
+                        </div>
+                        <div class="header-main__text">
+                                <a href="reviews.html">Отзывы</a>
+                        </div>
+                        <div class="header-main__text">
+                                <a href="contact.html">Контакты</a>
+                        </div>
+                </div>
+                <div class="header-number">
+                        <a href="tel:+375292586913">+ 375 (29) 258-69-13</a>
+                </div>
+        </header>
 
 
-<section class="main" style="background-image: url(../img/background/kozh-slider.png); background-position-x: 55%;">
+<section class="main main-leather" style="background-image: url(../img/background/kozh-slider.png)" >
     <div class="magnet">
         <h1 class="magnet__h1">Химчистка кожанных диванов</h1>
-        <div class="magnet__text">
-            <p>Удаляем пятна и выводим запахи </p> 
-            <p>Работаем только со средствами <br> безопасными для здоровья!</p>
-        </div>
-         
-            <div class="button-main-block">
+        <div class="magnet__text"> 
+                                                                         <p>🔥 Сезонные скидки <span class="bold">30%</span>  на химчистку изделий из кожи</p> 
+
+                                      <p>🔥 Только до <span class="bold" id="date"></span>!</p>
+                                      <p>🔥 Только <span class="bold">БЕЗОПАСНЫЕ</span> для здоровья средства!</p>
+                                      <div id="demo" class="dryclean-timer flex"></div>
+
+                            <div class="button-main-block">
                                 <div>
                                         <button class="magnet__button button-main mobile-hide" onclick="modalActive(1)">
                                                 Заказать химчиску ⏱ сразу
                                         </button>
                                 </div>
                                 <div class="quiz-block">
-                                        <a href="http://leads-one.tilda.ws/dry-clean"><button class="button_quiz">Рассчитать стоимоть +<br>Зафиксировать подарок 🎁</button></a>
+                                        <a href="index.html#price-block" ><button  class="button_sentence">🔥ПОСМОТРЕТЬ ПРЕДЛОЖЕНИЕ🔥</button></a>
+                                </div>
                                 </div>
                         </div>
 </section>

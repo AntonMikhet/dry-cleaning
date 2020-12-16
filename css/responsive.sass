@@ -1,13 +1,17 @@
-@media (min-width:1px) and (max-width: 667px)
+@media (min-width:410px) and (max-width: 667px)
     body 
         width: 100%
         height: 100%
         padding: 0
         margin: 0
+    .button_sentence
+        
+        margin-left: 0
+        margin-top: 50px
     #mobile
         display: flex
         flex-direction: column
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         height: 180px
         width: 100%
         // position: relative
@@ -17,6 +21,8 @@
         margin-left: 0px 
         margin-top: 100px
         height: 70px
+        padding: 10px 20px 10px 20px
+        font-size: 18px
     .description .quiz-block
         margin: 0 auto
         width: 340px
@@ -31,7 +37,7 @@
         display: flex
         justify-content: space-between
         color: black
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         z-index: 5
         
     .mobile-subheader 
@@ -41,7 +47,7 @@
         top: 45%
         left: 0
         z-index: 1
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         color: black
         padding: 10px 10px 0 10px
         height: 100px
@@ -156,7 +162,7 @@
         top: 12%
         width: 0%
         height: 100%
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         z-index: -5
         color: black
         transition: 0.5s ease
@@ -165,31 +171,18 @@
         width: 65%
         margin-left: 17.5%
         color: black
-        font-family: "Segoe UI"
         font-size: 19px
         font-weight: 400
         padding-top: 5px
         line-height: 30px
     #list > ul
         padding-left: 5%
-    .contact-main
-        display: flex
-        width: 80%
-        margin-left: 10%
-        flex-direction: column
 
-    .requisites 
         line-height: 19px
         width: 90%
         margin-left: 5%
     .requisites > p
         font-size: 17px
-    .contact-line-one, .contact-form
-        width: 100%
-    .contact-line-one > p
-        text-align: left  
-    .contact-mail
-        // margin-left: 37px  
     .nav-link 
         color: white !important
     .how > .examples-box 
@@ -214,7 +207,7 @@
         width: 280px
         display: flex
         flex-direction: column
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         color: black
         margin-left: 0px
         padding-top: 0
@@ -228,7 +221,6 @@
         color: #2f3e53
         text-align: right
         padding-right: 0
-        font-family: "Roboto, Arial, sans-serif"
         font-size: 16px
         line-height: 25px
         font-weight: 400
@@ -269,13 +261,14 @@
         margin-top: -20%
     .main
         width: 100%
-        height: 700px
+        height: 500px
         display: flex
         flex-direction: column
         background-position-x: 93% !important
         background-position-y: 0
         top: 0
         background-size: cover
+        border-bottom: 1px solid silver
     .magnet 
         padding: 5px 0 50px 5px
         text-align: center
@@ -283,8 +276,9 @@
         padding-top: 5px
         font-size: 24px
     .magnet__text > p 
-        line-height: 20px
-        font-size: 16px
+        line-height: 28px
+        font-size: 19px
+        text-align: left
     .main-img
         width: 100%
         height: 400px
@@ -398,6 +392,9 @@
         align-items: center
     .why-org
         flex-direction: column
+        margin: 0 auto
+    .why-org div
+        margin: 0 auto
     .appraisal
         flex-direction: column
         height: auto
@@ -408,14 +405,14 @@
         width: 90%
     .bread-crumbs 
         margin-left: 60px
+        font-size: 12px
     .for-organization-block div a > img 
         margin-left: 65px
     .for-organization > h1 
-        margin-left: 120px
+        margin-left: 50px
     .for-organization > h2 
         margin-left: 65px
-    .contact-line-one .number-contact 
-        font-size: 25px
+
     .reviews div > img
         width: 100%
     .reviews
@@ -456,18 +453,87 @@
     .block-sale > p 
         width: 90%
         margin-left: 5%
+    .magnet__text
+        margin-left: 5%
+    .main-leather
+        background-image: url(../img/background/kozh-slider.png) !important
+        background-position-y: 260% !important
+        background-repeat: no-repeat !important
+        background-color: #f7f7f7
+        background-size: unset !important
+        background-position-x: 88% !important
+    .main-matrass
+        background-image: url(../img/background/matrasy-slider.png) !important
+        background-size: 285% !important
+        background-repeat: no-repeat !important
+        background-position-y: 130% !important
+        background-color: #fcfbfc
+    .main-mebel
+        background-image: url(../img/background/mebel-slider.png) !important
+        background-size: unset !important
+        background-position-y: 135% !important
+        background-position-x: 97% !important
+        background-repeat: no-repeat !important
+        background-color: #faf8f6 
+    body .main-stylya
+        background-image: url(../img/background/slider-stulya.jpg) !important
+        background-position-x: 71% !important 
+        background-position-y: 130% !important
+        background-repeat: no-repeat !important
+        background-size: 290% !important
+        background-color: #f6f6f6
+    .main-divan
+        background-repeat: no-repeat !important
+        background-size: unset !important
+        background-position-y: 130% !important
+        background-color: #f1f1f1
+    .contact-block 
+        flex-direction: column
+        width: 90%
+        margin-left: 3%
+        padding: 10px
+    .contact-block div
+        width: 100%
+        font-size: 16px
+    .timerbox
+        color: white
+        height: 20px
+        margin: 20px 0px 0px 0px
+        background-color: #ff7547
+        padding: 0px 5px 10px 5px
+        border-radius: 6px
+    .dryclean-timer
+        font-size: 17px
+        justify-content: space-between
+        width: 100%
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width:668px) and (max-width: 1023px)
     .desctop-hide
         display: block
-    
+    .button_sentence
+        
+        margin-left: 0
+        margin-top: 50px
     #mobile
         display: flex
         flex-direction: column
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         height: 180px
         width: 100%
         // position: relative
@@ -482,7 +548,7 @@
         display: flex
         justify-content: space-between
         color: black
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         z-index: 5
     .button-main-block
         flex-direction: column
@@ -495,7 +561,7 @@
         top: 55%
         left: 0
         z-index: 1
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         color: black
         padding: 10px 10px 0 10px
         height: 100%
@@ -597,7 +663,7 @@
         top: 9.5%
         width: 0%
         height: 100%
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         z-index: -5
         color: black
         transition: 0.5s ease
@@ -606,7 +672,6 @@
         width: 65%
         margin-left: 17.5%
         color: black
-        font-family: "Segoe UI"
         font-size: 30px
         font-weight: 400
         padding-top: 5px
@@ -624,7 +689,7 @@
         width: 510px
         display: flex
         flex-direction: column
-        background-color: rgb(242,242,242)
+        background-color: #f1f1f1
         color: black
         margin-left: 0px
         padding-top: 0
@@ -638,7 +703,6 @@
         color: #2f3e53
         text-align: right
         padding-right: 0
-        font-family: "Segoe UI"
         font-size: 30px
         line-height: 34px
         font-weight: 400
@@ -679,13 +743,14 @@
         margin-top: -20%
     .main
         width: 100%
-        height: 865px
+        height: 700px
         display: flex
         flex-direction: column
         background-position-x: 87% !important
         background-position-y: 0
         top: 50px
         background-size: cover
+        border-bottom: 1px solid silver
     .magnet 
         padding: 5px 0 50px 5px
         text-align: center
@@ -695,7 +760,8 @@
         margin-bottom: 20px
     .magnet__text > p 
         line-height: 36px
-        font-size: 34px
+        font-size: 26px
+        text-align: left
     .main-img
         width: 100%
         height: 400px
@@ -819,8 +885,6 @@
         width: 90%
         font-size: 30px
         line-height: 35px
-    .contact-line-one .number-contact 
-        font-size: 25px
     .heading 
         
         font-size: 40px
@@ -852,11 +916,6 @@
     .price-card > img
         width: 70%
         margin-left: 15% 
-    .contact-main
-        display: flex
-        width: 80%
-        margin-left: 10%
-        flex-direction: column
 
     .requisites 
         line-height: 19px
@@ -864,12 +923,7 @@
         margin-left: 5%
     .requisites > p
         font-size: 17px
-    .contact-line-one, .contact-form
-        width: 100%
-    .contact-line-one > p
-        text-align: left
-    .contact-mail
-        // margin-left: 80px  
+
     .logo a > img 
         width: 125px
         margin-left: 25px
@@ -892,6 +946,9 @@
         align-items: center
     .why-org
         flex-direction: column
+        margin: 0 auto
+    .why-org div
+        margin: 0 auto
     .appraisal
         flex-direction: column
         height: auto
@@ -902,10 +959,11 @@
         width: 90%
     .bread-crumbs 
         margin-left: 60px
+        font-size: 12px
     .for-organization-block div a > img 
         margin-left: 100px
     .for-organization > h1 
-        margin-left: 120px
+        margin-left: 50px
     .for-organization > h2 
         margin-left: 65px
     .reviews div > img
@@ -962,5 +1020,591 @@
     .block-sale > img
         width: 450px
         margin: 0 auto
+    .magnet__text
+        width: 90%
+        margin-left: 5%
+    .main-leather
+        background-image: url(../img/background/kozh-slider.png) !important
+        background-position-y: 75% !important
+        background-repeat: no-repeat !important
+        background-color: #f7f7f7
+        background-position-x: 104% !important
+        background-size: unset !important
+    .main-matrass
+        background-image: url(../img/background/matrasy-slider.png) !important
+        background-size: 285% !important
+        background-repeat: no-repeat !important
+        background-position-y: 140% !important
+        background-color: #fcfbfc
+        background-position-x: 93% !important
+    .main-mebel
+        background-image: url(../img/background/mebel-slider.png) !important
+        background-size: unset !important
+        background-position-y: 84% !important
+        background-repeat: no-repeat !important
+        background-color: #faf8f6 
+    body .main-stylya
+        background-image: url(../img/background/slider-stulya.jpg) !important
+        background-position-x: 78% !important
+        background-position-y: 119% !important
+        background-repeat: no-repeat !important
+        background-size: unset !important
+        background-color: #f6f6f6
+    .main-divan
+        background-repeat: no-repeat !important
+        background-size: unset !important
+        background-position-y: 100% !important
+        background-color: #f1f1f1
+    .contact-block 
+        flex-direction: column
+        width: 90%
+        margin-left: 3%
+        padding: 10px
+    .contact-block div
+        width: 100%
+        font-size: 16px
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+@media (min-width:1px) and (max-width: 410px)
+    .magnet__text 
+        font-size: 15px
+    .magnet__text > p
+        line-height: 28px
+        font-size: 19px
+        text-align: left
+    .button_sentence
+        font-size: 15px
+        margin-left: 0
+        margin-top: 50px
+    body 
+        width: 100%
+        height: 100%
+        padding: 0
+        margin: 0
+    .price-card > h2 
+        margin-top: 0
+    #mobile
+        display: flex
+        flex-direction: column
+        background-color: #f1f1f1
+        height: 180px
+        width: 100%
+        // position: relative
+    .mobile 
+        display: flex
+    .button_quiz
+        margin-left: 0px 
+        margin-top: 100px
+        height: 70px
+        padding: 10px 20px 10px 20px
+        font-size: 16px
+    .description .quiz-block
+        margin: 0 auto
+        width: 340px
+    .quiz-block
+        margin: 0 auto
+    .mobile-header
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 13%
+        display: flex
+        justify-content: space-between
+        color: black
+        background-color: #f1f1f1
+        z-index: 5
+        
+    .mobile-subheader 
+        display: flex
+        flex-direction: column
+        position: relative
+        top: 45%
+        left: 0
+        z-index: 1
+        background-color: #f1f1f1
+        color: black
+        padding: 10px 10px 0 10px
+        height: 100px
+    .mobile-messanger 
+        display: flex
+        flex-wrap: wrap
+        margin: 3% auto
+        flex-direction: row
+        width: 230px
+        justify-content: space-around
+    .mobile-subheader__btn 
+        margin-left: 28%
+        width: 50%
+    .mobile-subheader__tel > a 
+        font-size: 25px
+        font-weight: 500
+        // font-family: Arial, Roboto, sans-serif
+        color: black 
+        text-decoration: none
+    .examples-line 
+        flex-direction: column
+    .examples-block
+        width: 100% 
+    .icons
+        width: 50px
+    // burger
+    .model-4
+        width: 50px
+        height: 50px
+        margin-top: -6%
+        margin-right: 3%
+    .menu 
+        height: 27%
+        width: 65%
+        position: relative
+        margin: auto
+        padding-top: 20px
+        border: 4px solid transparent
+        -moz-border-radius: 100%
+        -webkit-border-radius: 100%
+        border-radius: 100%
+        -moz-transition: 0.3s
+        -o-transition: 0.3s
+        -webkit-transition: 0.3s
+        transition: 0.3s
+        cursor: pointer
+        margin-top: 33px
+        margin-right: 18px
+        transform: rotate(90deg)
+    .bar 
+        height: 2px
+        width: 30px
+        display: block
+        margin: 10px auto
+        position: relative
+        background-color: #207a34
+        -moz-border-radius: 10px
+        -webkit-border-radius: 10px
+        border-radius: 10px
+        -moz-transition: 0.4s
+        -o-transition: 0.4s
+        -webkit-transition: 0.4s
+        transition: 0.4s
+    .model-4 .menu 
+        border-color: #a6a6a6
+        -moz-border-radius: 100%
+        -webkit-border-radius: 100%
+        border-radius: 100%
+    .model-4 .bar 
+        height: 10px
+        width: 10px
+        background: none
+        border-bottom: 4px solid #a6a6a6
+        border-right: 4px solid #a6a6a6
+        position: absolute
+        -moz-border-radius: 0
+        -webkit-border-radius: 0
+        border-radius: 0
+        -moz-transform: rotate(45deg)
+        -ms-transform: rotate(45deg)
+        -webkit-transform: rotate(45deg)
+        transform: rotate(45deg)
+        margin: auto
+        top: 7px
+        right: 0px
+        left: 0
+    .showburger__arrow
+        top: 2px !important
+    .showburger
+        -moz-transform: rotate(225deg)
+        -ms-transform: rotate(225deg)
+        -webkit-transform: rotate(225deg)
+        transform: rotate(225deg) !important
+        transform-origin: 73% 102% 0
+        top: 2.5px !important
+                                // BURGER CLOSE
+    .leather-block
+        flex-direction: column
+    .leather-card
+        margin: 0 auto
+    .price-card > img
+        margin-left: 0
+    .nav-text__info
+        margin-left: 30px
+        font-size: 25px
+    .slidebar-messanger a > img
+        width: 47px
+    .slidebar
+        display: block
+        position: fixed
+        right: 0
+        top: 12%
+        width: 0%
+        height: 100%
+        background-color: #f1f1f1
+        z-index: -5
+        color: black
+        transition: 0.5s ease
+    #list
+        display: none
+        width: 65%
+        margin-left: 17.5%
+        color: black
+        font-family: "Segoe UI"
+        font-size: 19px
+        font-weight: 400
+        padding-top: 5px
+        line-height: 30px
+    #list > ul
+        padding-left: 5%
+    .requisites 
+        line-height: 19px
+        width: 90%
+        margin-left: 5%
+    .requisites > p
+        font-size: 17px
     
+    .nav-link 
+        color: white !important
+    .how > .examples-box 
+        display: flex
+        flex-direction: column
+        width: 90%
+        margin-left: 5%
+    .examples-box >div
+        width: 100%
+        height: 200px
+    .examples-box div > iframe
+        width: 100%
+        height: 220px
+    .examples-box > iframe
+        width: 100%
+        height: 220px
+    .logo a > img
+        width: 125px
+        margin-left: 25px
+        margin-top: 10px
+    .dropdown-menu-remont, .dropdown-menu-catalog 
+        width: 280px
+        display: flex
+        flex-direction: column
+        background-color: #f1f1f1
+        color: black
+        margin-left: 0px
+        padding-top: 0
+        text-align: right
+    #remont
+        display: flex
+    
+    #catalog
+        display: none
+    .slidebar-item 
+        color: #2f3e53
+        text-align: right
+        padding-right: 0
+        font-size: 16px
+        line-height: 25px
+        font-weight: 400
+        text-decoration: none
+    .slidebar-item:hover 
+        color: #f5a907
+    .slidebar-item:visited
+        color: #2f3e53
+    .slidebar-item:active
+        color: #f5a907
+    .slidebar_li
+        color: #2f3e53 !important
+        height: 18px
+        text-decoration: none
+    .slidebar_li:hover 
+        color: #f5a907
+    .slidebar_li:visited
+        color: black
+    .slidebar_li:active
+        color: #f5a907
+    .chevrone
+        transform: rotate(90deg)
+    .click-list
+    .slidebar-bottom
+        width: 80%
+        position: fixed
+        left: 10%
+        bottom: 2%
+    .slidebar-messanger
+        display: flex
+        justify-content: space-between
+        width: 85%
+        margin-left: 10%
+        padding: 15 0
+    .carousel
+        display: flex
+        justify-content: space-around
+        margin-top: -20%
+    .main
+        width: 100%
+        height: 500px
+        display: flex
+        flex-direction: column
+        background-position-x: 93% !important
+        background-position-y: 0
+        top: 0
+        background-size: cover
+        border-bottom: 1px solid silver
+
+    .magnet 
+        padding: 5px 0 50px 5px
+        text-align: center
+    .magnet__h1 
+        padding-top: 5px
+        font-size: 24px
+    .magnet__text > p 
+        line-height: 20px
+        font-size: 16px
+    .main-img
+        width: 100%
+        height: 400px
+    .carousel-bar
+        width: 50px
+        height: 50px
+        border: 1px solid black
+        background-color: #1a151575
+    .calculate-cost
+        position: relative
+        top: 52%
+        left: 35%
+        height: 35px
+    .main-img
+        // overflow: hidden
+    .bullet
+        position: absolute
+        top: 35%
+        left: 6%
+        font-size: 25
+        font-family: Arial, Helvetica, sans-serif
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+    .bullet > p
+        margin-block-end: 8px
+        margin-block-start: 8px
+    .bullet > p::before
+        content: '• '
+    .red
+        border: 1px solid red   
+    .action-block__yellow
+        background-color: yellow
+        width: 100%
+        height: 100%
+    .action-block__red
+        background: red
+        width: 80%
+        height: 80%
+        position: relative
+        top: 10%
+        left: 10%
+    .sale
+        width: 100%
+        height: 250px
+        margin-top: -20%
+    .action-text
+        padding-top: 10%
+        margin: 0
+        font: 25px arial
+    .desctop-header
+        display: none
+    .header__mobile
+        display: flex !important
+    .description div 
+        width: 90%
+        margin-left: 5%
+    .qualities-block
+        flex-direction: column
+    .qualities-card 
+        width: 100%
+        text-align: center
+        margin-top: 10px
+        margin-bottom: 20px
+    .how > div 
+        width: 90%
+        margin-left: 5%
+    .price__text
+        width: 90%
+        margin-left: 5%
+    .price-block-one
+        flex-direction: column
+    .price-block-two
+        flex-direction: column
+    .price-card 
+        width: 100%
+    .price-card > img
+        width: 100% 
+    .sofa
+        width: 90%
+        margin-left: 5%
+    .head-calc > button
+        margin-left: 0% !important
+    .calc
+        height: 280px
+        margin-top: 10px
+        padding: 20px 0 100px 0
+    .questions-block 
+        width: 90%
+        margin-left: 10px
+        margin-right: 10px
+        padding: 7px
+        font-size: 12px
+        margin-bottom: 20px
+    footer
+        flex-direction: column
+    .modal-case
+        width: 90%
+        margin-left: 4%
+        padding: 5px
+    .modal-burger
+        top: 30px
+    .nav-text__info > a
+        color: #2f3e53
+        text-decoration: none
+        font-family: Arial, Roboto, sans-serif
+    .for-organization 
+        margin-top: -70px
+    .for-organization-block
+        flex-direction: column
+        align-items: center
+    .why-org
+        flex-direction: column
+        margin: 0 auto
+    .why-org div
+        margin: 0 auto
+    .appraisal
+        flex-direction: column
+        height: auto
+    .appraisal-button
+        width: 77%
+        margin: 0 auto
+    .appraisal-text
+        width: 90%
+    .bread-crumbs 
+        margin-left: 60px
+        font-size: 12px
+    .for-organization-block div a > img 
+        margin-left: 65px
+    .for-organization > h1 
+        margin-left: 50px
+    .for-organization > h2 
+        margin-left: 65px
+
+    .reviews div > img
+        width: 100%
+    .reviews
+        width: 100%
+        margin-left: 0
+    .mobile-hide
+        display: none
+    .magnet__button
+        margin-left: 0px 
+    .desctop-hide
+        display: block
+    .timer
+        margin: 20% auto 0
+        left: 0
+    .t
+        margin-left: 0px
+    .thanks
+        left: 10%
+        top: 35%
+        width: 80%
+        height: 30%
+    .block_success div 
+        width: 100%
+
+    .block_success div a > button 
+        width: 100%
+        font-size: 16px
+        padding: 0 20px 0 20px
+    .sale
+        width: 100%
+        margin: 50px 0 50px 0
+        align-items: center
+        height: 550px
+    .block-sale
+        display: flex
+        justify-content: space-around
+        flex-direction: column
+    .block-sale > p 
+        width: 90%
+        margin-left: 5%
+    .magnet__text
+        margin-left: 5%
+    .price-card > h2 
+        margin-top: 0
+    .main-leather
+        background-image: url(../img/background/kozh-slider.png) !important
+        background-position-y: 200% !important
+        background-repeat: no-repeat !important
+        background-color: #f7f7f7
+        background-size: unset !important
+        background-position-x: 88% !important
+    .main-matrass
+        background-image: url(../img/background/matrasy-slider.png) !important
+        background-size: 285% !important
+        background-repeat: no-repeat !important
+        background-position-y: 100% !important
+        background-color: #fcfbfc
+    .main-mebel
+        background-image: url(../img/background/mebel-slider.png) !important
+        background-size: unset !important
+        background-position-y: 100% !important
+        background-repeat: no-repeat !important
+        background-color: #faf8f6 
+    body .main-stylya
+        background-image: url(../img/background/slider-stulya.jpg) !important
+        background-position-x: 71% !important 
+        background-position-y: 100% !important
+        background-repeat: no-repeat !important
+        background-size: 290% !important
+        background-color: #f6f6f6
+    .main-divan
+        background-repeat: no-repeat !important
+        background-size: unset !important
+        background-position-y: 100% !important
+        background-color: #f1f1f1
+    .contact-block 
+        flex-direction: column
+        width: 90%
+        margin-left: 3%
+        padding: 10px
+    .contact-block div
+        width: 100%
+        font-size: 16px
+    .timerbox
+        color: white
+        height: 20px
+        margin: 20px 0px 0px 0px
+        background-color: #ff7547
+        padding: 0px 5px 10px 5px
+        border-radius: 6px
+    .dryclean-timer
+        font-size: 14px
+        justify-content: space-between
+        width: 100%
