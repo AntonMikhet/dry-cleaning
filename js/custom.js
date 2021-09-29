@@ -89,7 +89,7 @@ window.onload = function pricesLoad() {
     divan__price8.innerHTML="От " + kreslo;
     var divan__priceOld8 = document.getElementById('divan_old__price8');
     divan__priceOld8.innerHTML="От " + kresloOld;
-    setTimeout(video,2000);
+    
 };
 
 function price(leathertexile) {
@@ -373,11 +373,28 @@ setTimeout(ad,1000);
 var datenow = new Date()
 var yeardate = datenow.getFullYear(datenow);
 var monthdate = datenow.getMonth(datenow);
-var monthdatetimer = datenow.getMonth(datenow) + 1;
-var daydate = datenow.getDate(datenow) + 2;
+var monthdatetimer = datenow.getMonth(datenow);
+var daydate = datenow.getDate(datenow);
+
+var daydate = daydate + 2;
+var monthdatetimer = monthdatetimer + 1;
+
 
 var datetimer = monthdatetimer + "-" + daydate + "-" + yeardate; 
+
+if (daydate == 32) {
+    var daydate = daydate - 1; 
+    var monthdatetimer = monthdatetimer;
+    var datetimer = monthdatetimer + "-" + daydate + "-" + yeardate; 
+} else if (daydate == 33) {
+    var daydate = daydate - 1; 
+    var monthdatetimer = monthdatetimer;
+    var datetimer = monthdatetimer + "-" + daydate + "-" + yeardate; 
+} 
+
 var countDownDate = new Date(datetimer.replace(/-/g, "/")).getTime();
+
+console.log(countDownDate)
 
 if (monthdate == 1) {
     monthdate = " Января"
@@ -404,8 +421,19 @@ if (monthdate == 1) {
 } else if (monthdate == 11) {
     monthdate = " Декабря"
 } 
-var date = daydate + monthdate;
+if (daydate == 31) {
+    var daydate = daydate - 1; 
+    var date = daydate + monthdate;
 document.getElementById('date').innerHTML = date;
+} else if (daydate == 33) {
+    var daydate = daydate - 1; 
+    var date = daydate + monthdate;
+    document.getElementById('date').innerHTML = date; 
+} else {
+    var date = daydate + monthdate;
+    document.getElementById('date').innerHTML = date;
+};
+
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -415,7 +443,7 @@ var x = setInterval(function() {
     
     // Find the distance between now an the count down date
     var distance = countDownDate - now;
-    
+ 
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
