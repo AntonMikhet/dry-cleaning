@@ -363,7 +363,7 @@ function video() {
 
 
 setTimeout(ad,1000);
-setTimeout(urlQuiz,1000);
+// setTimeout(urlQuiz,1000);
 
 
 
