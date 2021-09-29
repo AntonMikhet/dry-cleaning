@@ -458,15 +458,16 @@ var x = setInterval(function() {
    } else if (days > 4) {
         var daystext = ' Дней ';
    }
-   if (hours == 0) {
+   if (hours == 0 || hours > 5 && hours < 21) {
        var hourstext = " Часов"
-   } else if (hours == 1) {
+   } else if (hours == 1 || hours == 21) {
         var hourstext = " Час"
-   } if (hours > 1 && hours < 5) {
+   } else if (hours > 1 && hours < 5 || hours > 21) {
         var hourstext = " Часа"
-   } if (hours > 5) {
-        var hourstext = " Часов"
    }
+
+
+
    if (/0/.test(minutes) == 1) {
        var minutestext = " Минут"
    } else if (/1/.test(minutes) == 1) {
