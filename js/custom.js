@@ -466,8 +466,6 @@ var x = setInterval(function() {
         var hourstext = " Часа"
    }
 
-
-
    if (/0/.test(minutes) == 1) {
        var minutestext = " Минут"
    } else if (/1/.test(minutes) == 1) {

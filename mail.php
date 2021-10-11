@@ -46,10 +46,10 @@ $urlAd = urldecode($urlAd);
 $urlAd = trim($urlAd);
 
 $subject = "=?utf-8?B?".base64_encode("Заявка Dry Cleaning")."?=";
-$headers = "From: dry.clean.minsk@gmail.com\r\nContent-type: text/html; charset=utf-8\r\n";
+$headers = "From: ssavrinovic@gmail.com\r\nContent-type: text/html; charset=utf-8\r\n";
 $message = 'Имя: ' .$name. '<br/>Номер телефона: +' .$phone. '<br/>Комментарий: ' .$comment. '<br/> Мебель: ' .$divan. '<br/>' .$kover. '<br/>' .$matras. '<br/>' .$furniture. '<br/> Источник: ' .$urlSource. '<br/> Объявление: ' .$urlAd;  
 
-if (mail("dry.clean.minsk@gmail.com", $subject, $message ,$headers))
+if (mail("ssavrinovic@gmail.com", $subject, $message ,$headers))
 {header("Location: thanks.html");}     
 
 ?>
